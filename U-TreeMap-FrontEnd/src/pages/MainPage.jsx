@@ -1,4 +1,4 @@
-import MapBox from "../components/mapBox";
+import MapBox from "../components/MapBox";
 
 export default function MapPage() {
   return (
