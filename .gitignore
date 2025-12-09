@@ -140,3 +140,24 @@ vite.config.ts.timestamp-*
 
 #_metadata.json
 _metadata.json
+
+
+#env 설정
+# 모든 로컬 환경파일은 무조건 제외
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+.env.test
+.env.backup
+.env.me
+.flaskenv*
+
+# 업로드 허용 예외 (암호화 vault와 example만)
+!.env.vault
+!.env.example
+
+#macOS 시스템파일
+.DS_Store
+.DS_Store?
