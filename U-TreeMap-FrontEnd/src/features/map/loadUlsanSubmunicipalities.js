@@ -1,3 +1,5 @@
+import { TargetFeature } from "mapbox-gl";
+
 /**
  * 울산 읍·면·동 GeoJSON을 지도에 로딩
  * @param {mapboxgl.Map} map
@@ -15,6 +17,7 @@ export async function loadUlsanSubmunicipalities(map) {
   map.addSource("ulsan-emd", {
     type: "geojson",
     data: geojson,
+    promoteId: "code",
   });
 
   // 🟩 면 채우기
@@ -23,8 +26,19 @@ export async function loadUlsanSubmunicipalities(map) {
     type: "fill",
     source: "ulsan-emd",
     paint: {
-      "fill-color": "#66BB6A",
-      "fill-opacity": 0.45,
+      "fill-color": [
+        "case",
+        ["boolean", ["feature-state", "hover"], false],
+        "#2E7D32", //hover
+        "#66BB6A" // 기본
+      ],
+
+      "fill-opacity": [
+        "case",
+        ["boolean", ["feature-state", "hover"], false],
+        0.7,
+        0.45,
+      ],
     },
   });
 

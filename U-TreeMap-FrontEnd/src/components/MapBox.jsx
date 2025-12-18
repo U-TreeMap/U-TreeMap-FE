@@ -46,6 +46,48 @@ export default function MapBox({
       setupZoomController(map);
     });
 
+    //hover
+    let hoveredEmdId = null;
+    map.on("mousemove", "ulsan-emd-fill", (e) => {
+      if (!e.features.length) return;
+
+      const feature = e.features[0];
+
+      if (hoveredEmdId !== null) {
+        map.setFeatureState(
+          { source: "ulsan-emd", id: hoveredEmdId },
+          { hover: false }
+        );
+      }
+
+      hoveredEmdId = feature.id;
+
+      map.setFeatureState(
+        { source: "ulsan-emd", id: hoveredEmdId },
+        { hover: true }
+      );
+    });
+
+    map.on("mouseleave", "ulsan-emd-fill", () => {
+      if (hoveredEmdId !== null) {
+        map.setFeatureState(
+          { source: "ulsan-emd", id: hoveredEmdId },
+          { hover: false }
+        );
+      }
+      hoveredEmdId = null;
+    });
+
+    map.on("mouseenter", "ulsan-emd-fill", () => {
+    map.getCanvas().style.cursor = "pointer";
+  });
+
+    map.on("mouseleave", "ulsan-emd-fill", () => {
+      map.getCanvas().style.cursor = "";
+    });
+
+
+
     return () => {
       map.remove();
       mapRef.current = null;
