@@ -4,26 +4,27 @@ import { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
-// 마커 스타일 함수 (📌 네 함수 import)
-import { createMarkerElement } from "../features/map/createMarkerEl";  
+import { loadTreeMarkers } from "../features/map/loadTreeMarkers";
+import { loadUlsanSubmunicipalities } from "../features/map/loadUlsanSubmunicipalities";
+import { setupZoomController } from "../features/map/zoomController";
 
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
 
 export default function MapBox({ 
-  center = [129.2566, 35.5434],  //내 위치기반으로 돌리고, 내위치 마커 추가해야됨
+  center = [129.2566, 35.5434],
   zoom = 20
 }) {
   const mapContainer = useRef(null);
   const mapRef = useRef(null);
 
   useEffect(() => {
-
+    // 🔴 환경변수 체크
     if (!import.meta.env.VITE_MAPBOX_TOKEN) {
       console.error(
-        "%c[환경설정 필요] .env 파일에 VITE_MAPBOX_TOKEN을 추가해주세요. \n담당자: 이하은 🙋‍♀️", 
-        "color: red; font-size: 15px; font-weight:bold;"
+        "%c[환경설정 필요] .env 파일에 VITE_MAPBOX_TOKEN을 추가해주세요.\n담당자: 이하은 🙋‍♀️",
+        "color:red;font-size:15px;font-weight:bold;"
       );
-      return; // 지도 생성 중단
+      return;
     }
 
     if (mapRef.current) return;
@@ -38,40 +39,60 @@ export default function MapBox({
     mapRef.current = map;
     map.addControl(new mapboxgl.NavigationControl());
 
-    /** ⬇ JSON 데이터 불러오기 + 마커 렌더링 */
+    // ✅ load 시점에 기능 로딩
     map.on("load", async () => {
-      try {
-        const url = new URL("../data/test/11_22_tree.json", import.meta.url);
-        const res = await fetch(url); // public 폴더에 두면 ✓ 자동 접근 가능
-        const json = await res.json();
-
-        const teams = Object.keys(json); // team1, team2...
-
-        teams.forEach(team => {
-          json[team].forEach(tree => {
-            if (!tree.lat || !tree.lng) return; // 위치 없는 데이터 제외
-
-            const el = createMarkerElement(14, 2); // size, colorIndex
-
-            new mapboxgl.Marker({ element: el })
-              .setLngLat([tree.lng, tree.lat])
-              .setPopup(new mapboxgl.Popup().setHTML(`
-                <b>${tree.species ?? "수종 미상"}</b><br/>
-                흉고직경: ${tree.diameter_cm ?? "-"} cm<br/>
-                수고: ${tree.height_cm ?? "-"} cm<br/>
-              `))
-              .addTo(map);
-          });
-        });
-
-        console.log("%c 🌳 트리 로딩 완료!", "color:green;font-size:14px");
-        
-      } catch (e) {
-        console.error("Tree JSON Load Failed ❌", e);
-      }
+      await loadTreeMarkers(map);
+      await loadUlsanSubmunicipalities(map);
+      setupZoomController(map);
     });
 
+    //hover
+    let hoveredEmdId = null;
+    map.on("mousemove", "ulsan-emd-fill", (e) => {
+      if (!e.features.length) return;
+
+      const feature = e.features[0];
+
+      if (hoveredEmdId !== null) {
+        map.setFeatureState(
+          { source: "ulsan-emd", id: hoveredEmdId },
+          { hover: false }
+        );
+      }
+
+      hoveredEmdId = feature.id;
+
+      map.setFeatureState(
+        { source: "ulsan-emd", id: hoveredEmdId },
+        { hover: true }
+      );
+    });
+
+    map.on("mouseleave", "ulsan-emd-fill", () => {
+      if (hoveredEmdId !== null) {
+        map.setFeatureState(
+          { source: "ulsan-emd", id: hoveredEmdId },
+          { hover: false }
+        );
+      }
+      hoveredEmdId = null;
+    });
+
+    map.on("mouseenter", "ulsan-emd-fill", () => {
+    map.getCanvas().style.cursor = "pointer";
+  });
+
+    map.on("mouseleave", "ulsan-emd-fill", () => {
+      map.getCanvas().style.cursor = "";
+    });
+
+
+
+    return () => {
+      map.remove();
+      mapRef.current = null;
+    };
   }, []);
 
-  return <div ref={mapContainer} className="w-full h-full"/>;
+  return <div ref={mapContainer} className="w-full h-full" />;
 }
