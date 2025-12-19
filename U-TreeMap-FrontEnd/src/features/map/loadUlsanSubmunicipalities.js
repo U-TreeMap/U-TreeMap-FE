@@ -1,5 +1,10 @@
 import { TargetFeature } from "mapbox-gl";
 import { CURRENT_LABEL_MODE, LABEL_MODE } from "./labelConfig";
+import {
+  CURRENT_HEATMAP_MODE,
+  HEATMAP_MODE,
+  HEATMAP_RANGE,
+} from "./heatmapConfig";
 
 
 /**
@@ -7,20 +12,36 @@ import { CURRENT_LABEL_MODE, LABEL_MODE } from "./labelConfig";
  * @param {mapboxgl.Map} map
  */
 export async function loadUlsanSubmunicipalities(map) {
-  const url = new URL(
+  // 1️⃣ GeoJSON 불러오기
+  const geoUrl = new URL(
     "../../data/geojson/ulsan_submunicipalities_2018.geojson",
     import.meta.url
   );
+  const geoRes = await fetch(geoUrl);
+  const geojson = await geoRes.json();
 
-  const res = await fetch(url);
-  const geojson = await res.json();
+  // 2️⃣ 통계 JSON 불러오기
+  const statUrl = new URL(
+    "../../data/geojson/ulsan_submunicipalities_dummy.json",
+    import.meta.url
+  );
+  const statRes = await fetch(statUrl);
+  const stats = await statRes.json();
 
-  //더미데이터 주입 -> 추후 api 호출 불러오는 로직으로 변경
-  //원본 geojson(불변)에 더미데이터(가변) 임시 주입.
-  geojson.features.forEach((f)=>{
-    f.properties.treeCount = 7777;
-    f.properties.carbonStorage = 7777;
-  })
+  // 3️⃣ code → 통계 데이터 Map 생성
+  const statMap = new Map();
+  stats.forEach((item) => {
+    statMap.set(item.code, item);
+  });
+
+  // 4️⃣ GeoJSON에 통계 주입
+  geojson.features.forEach((feature) => {
+    const code = feature.properties.code;
+    const stat = statMap.get(code);
+
+    feature.properties.treeCount = stat?.treeCount ?? 0;
+    feature.properties.carbonStorage = stat?.carbonStorage ?? 0;
+  });
 
   // 🟢 Source 추가
   map.addSource("ulsan-emd", {
@@ -28,6 +49,11 @@ export async function loadUlsanSubmunicipalities(map) {
     data: geojson,
     promoteId: "code",
   });
+
+  const heatmapValueExpression =
+    CURRENT_HEATMAP_MODE === HEATMAP_MODE.TREE
+      ? ["get", "treeCount"]
+      : ["get", "carbonStorage"];
 
   // 🟩 면 채우기
   map.addLayer({
@@ -38,16 +64,17 @@ export async function loadUlsanSubmunicipalities(map) {
       "fill-color": [
         "case",
         ["boolean", ["feature-state", "hover"], false],
-        "#2E7D32", //hover
-        "#66BB6A" // 기본
+        "#004D40", // hover 시
+        [
+          "interpolate",
+          ["linear"],
+          heatmapValueExpression,
+          HEATMAP_RANGE.MIN, "#E8F5E9",
+          HEATMAP_RANGE.MID, "#81C784",
+          HEATMAP_RANGE.MAX, "#1B5E20",
+        ],
       ],
-
-      "fill-opacity": [
-        "case",
-        ["boolean", ["feature-state", "hover"], false],
-        0.7,
-        0.45,
-      ],
+      "fill-opacity": 0.6,
     },
   });
 
