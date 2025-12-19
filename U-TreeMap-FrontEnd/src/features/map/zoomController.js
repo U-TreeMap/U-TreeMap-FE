@@ -8,7 +8,13 @@ import {
   hideUlsanPolygons,
 } from "./loadUlsanSubmunicipalities";
 
-const MARKER_ZOOM_THRESHOLD = 14;
+import {
+  showUlsanLabels,
+  hideUlsanLabels,
+} from "./loadUlsanSubmunicipalities";
+
+
+const MARKER_ZOOM_THRESHOLD = 15;
 
 export function setupZoomController(map) {
   const update = () => {
@@ -18,10 +24,12 @@ export function setupZoomController(map) {
       // 🌳 마커 ON, 폴리곤 OFF
       showTreeMarkers(map);
       hideUlsanPolygons(map);
+      hideUlsanLabels(map);
     } else {
       // 🟫 폴리곤 ON, 마커 OFF
-      hideTreeMarkers();
+      hideTreeMarkers(map);
       showUlsanPolygons(map);
+      showUlsanLabels(map);
     }
   };
 

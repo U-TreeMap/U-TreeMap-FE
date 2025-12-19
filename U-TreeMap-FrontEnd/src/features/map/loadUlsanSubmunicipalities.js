@@ -1,4 +1,6 @@
 import { TargetFeature } from "mapbox-gl";
+import { CURRENT_LABEL_MODE, LABEL_MODE } from "./labelConfig";
+
 
 /**
  * 울산 읍·면·동 GeoJSON을 지도에 로딩
@@ -12,6 +14,13 @@ export async function loadUlsanSubmunicipalities(map) {
 
   const res = await fetch(url);
   const geojson = await res.json();
+
+  //더미데이터 주입 -> 추후 api 호출 불러오는 로직으로 변경
+  //원본 geojson(불변)에 더미데이터(가변) 임시 주입.
+  geojson.features.forEach((f)=>{
+    f.properties.treeCount = 7777;
+    f.properties.carbonStorage = 7777;
+  })
 
   // 🟢 Source 추가
   map.addSource("ulsan-emd", {
@@ -53,6 +62,37 @@ export async function loadUlsanSubmunicipalities(map) {
     },
   });
 
+  //라벨값 변경 토글? (숫자 콤마)
+  const labelValueExpression =
+    CURRENT_LABEL_MODE == LABEL_MODE.TREE
+    ? ["number-format", ["get", "treeCount"], { locale: "ko-KR" }]
+    : ["number-format", ["get", "carbonStorage"], { locale: "ko-KR" }];
+
+  // 텍스트 라벨
+  map.addLayer({
+    id: "ulsan-emd-label",
+    type: "symbol",
+    source: "ulsan-emd",
+    layout: {
+      "text-field": [
+        "format",
+        ["get", "name"], { "font-scale": 1.15 },
+        "\n",
+        {},
+        labelValueExpression,
+        { "font-scale": 0.95 },
+      ],
+      "text-font": ["Noto Sans KR Bold", "Open Sans Bold"],
+      "text-size": 14,
+      "text-anchor": "center",
+      "text-allow-overlap": false,
+    },
+    paint: {
+      "text-color": "#ffffff",
+      "text-halo-color": "rgba(0,0,0,0.65)",
+      "text-halo-width": 2,
+    },
+  });
 
 
   console.log("%c🧩 Ulsan submunicipalities loaded", "color:#2E7D32;font-weight:bold;");
@@ -70,3 +110,12 @@ export function hideUlsanPolygons(map) {
   console.log("polygon unvisuable🙈");
 }
 
+// 🏷 읍·면·동 라벨 보이기
+export function showUlsanLabels(map) {
+  map.setLayoutProperty("ulsan-emd-label", "visibility", "visible");
+}
+
+// 🏷 읍·면·동 라벨 숨기기
+export function hideUlsanLabels(map) {
+  map.setLayoutProperty("ulsan-emd-label", "visibility", "none");
+}
