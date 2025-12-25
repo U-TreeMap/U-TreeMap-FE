@@ -17,17 +17,10 @@ export async function loadTreeMarkers(map) {
       json[team].forEach((tree) => {
         if (!tree.lat || !tree.lng) return;
 
-        const el = createMarkerElement(14, 2);
+        const el = createMarkerElement(14, 4);
 
         const marker = new mapboxgl.Marker({ element: el })
           .setLngLat([tree.lng, tree.lat])
-          .setPopup(
-            new mapboxgl.Popup().setHTML(`
-              <b>${tree.species ?? "수종 미상"}</b><br/>
-              흉고직경: ${tree.diameter_cm ?? "-"} cm<br/>
-              수고: ${tree.height_cm ?? "-"} cm
-            `)
-          );
 
         treeMarkers.push(marker);
       });

@@ -1,6 +1,6 @@
 // src/components/MapBox.jsx
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
@@ -8,14 +8,18 @@ import { loadTreeMarkers } from "../features/map/loadTreeMarkers";
 import { loadUlsanSubmunicipalities } from "../features/map/loadUlsanSubmunicipalities";
 import { setupZoomController } from "../features/map/zoomController";
 
+import MapControls from "./UI/MapControls";
+
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
 
 export default function MapBox({ 
   center = [129.2566, 35.5434],
-  zoom = 20
+  zoom = 10
 }) {
   const mapContainer = useRef(null);
   const mapRef = useRef(null);
+
+  const [mapReady, setMapReady] = useState(false);
 
   useEffect(() => {
     // 🔴 환경변수 체크
@@ -34,10 +38,23 @@ export default function MapBox({
       style: "mapbox://styles/mapbox/streets-v12",
       center,
       zoom,
+      pitch: 0,    // 🔒 기울기 제거
+      bearing: 0,  // 🔒 회전 제거
     });
 
+    // 지도범위 제한 in 울산광역시
+    const ULSAN_MAX_BOUNDS = [
+      [128.9, 35.3], // southwest
+      [129.6, 35.8], // northeast
+    ];
+    map.setMaxBounds(ULSAN_MAX_BOUNDS);
+
+    // 🔒 지도 회전 & 기울기 제스처 차단
+    map.dragRotate.disable();
+    map.touchZoomRotate.disableRotation();
+
     mapRef.current = map;
-    map.addControl(new mapboxgl.NavigationControl());
+    setMapReady(true);
 
     // ✅ load 시점에 기능 로딩
     map.on("load", async () => {
@@ -94,5 +111,11 @@ export default function MapBox({
     };
   }, []);
 
-  return <div ref={mapContainer} className="w-full h-full" />;
+  return(
+    <div className="relative w-full h-full">
+      <div ref={mapContainer} className="w-full h-full">
+        {mapReady && <MapControls map={mapRef.current}/>}
+      </div>
+    </div>
+  )
 }
