@@ -1,9 +1,9 @@
-import MapBox from "../components/MapBox";
+import Sidebar from '../components/SideBar';
 
-export default function MapPage() {
+export default function MainPage({ selectedTree }) {
   return (
-    <div className="w-screen h-screen">
-      <MapBox />
+    <div className="absolute inset-0 z-10 w-full h-full pointer-events-none">
+      <Sidebar selectedTree={selectedTree} />
     </div>
   );
 }

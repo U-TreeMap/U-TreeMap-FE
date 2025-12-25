@@ -1,17 +1,20 @@
-// src/App.jsx
+import { useState } from 'react';
+import MainPage from './pages/MainPage';
+import MobilePage from './pages/MobilePage';
+import MapBox from './components/MapBox';
+import { useIsMobile } from './hooks/hook';
+import { mockTreeData } from './data/mockTreeData';
 
-import MapPage from './pages/MainPage';
-import Sidebar from './components/SideBar';
-import Test from './components/UI/Test';
 export default function App() {
+  const isMobile = useIsMobile();
+
+  const [selectedTree, setSelectedTree] = useState(mockTreeData);
+
   return (
-    // <div w-screen h-screen>
-    //   <Sidebar />
-    //   {/* <Test></Test> */}
-    // </div>
-    <div className="w-screen h-screen">
-      <Sidebar />
-      <MapPage />
+    <div className="relative w-screen h-screen overflow-hidden">
+      <MapBox onSelectTree={setSelectedTree} isMobile={isMobile} />
+
+      {isMobile ? <MobilePage selectedTree={selectedTree} /> : <MainPage selectedTree={selectedTree} />}
     </div>
   );
 }
