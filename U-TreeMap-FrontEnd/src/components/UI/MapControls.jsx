@@ -5,7 +5,7 @@ import target from "../../assets/icons/map/target.svg";
 import { zoomIn, zoomOut } from "../../features/map/controlZoom";
 import { showMyLocationOnce } from "../../features/map/locateMe";
 
-export default function MapControls({ map }) {
+export default function MapControls({ map, isMobile }) {
   if (!map) return null;
 
 
@@ -20,7 +20,6 @@ export default function MapControls({ map }) {
   const shadowHover =
     "hover:shadow-[2px_2px_6px_rgba(0,0,0,0.3)] active:shadow-[1px_1px_3px_rgba(0,0,0,0.25)]";
 
-  const isMobile = true;
   
   const mobileZoomBox = "w-[48px] h-[96px] flex flex-col";
   const desktopZoomBox = "w-[28px] h-[56px] flex flex-col";

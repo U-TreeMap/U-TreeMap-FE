@@ -14,7 +14,8 @@ mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
 
 export default function MapBox({ 
   center = [129.2566, 35.5434],
-  zoom = 10
+  zoom = 10,
+  isMobile = false
 }) {
   const mapContainer = useRef(null);
   const mapRef = useRef(null);
@@ -114,7 +115,7 @@ export default function MapBox({
   return(
     <div className="relative w-full h-full">
       <div ref={mapContainer} className="w-full h-full">
-        {mapReady && <MapControls map={mapRef.current}/>}
+        {mapReady && <MapControls isMobile={isMobile} map={mapRef.current}/>}
       </div>
     </div>
   )
