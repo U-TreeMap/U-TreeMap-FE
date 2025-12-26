@@ -1,3 +1,7 @@
+// createMarkerEl.js
+import selectedTreeIcon from "../../assets/icons/tree-selected.svg";
+
+
 /**
  * Create a custom circular marker element for Mapbox
  *
@@ -19,19 +23,21 @@
 export function createMarkerElement(size = 32, color = 4) {
   const el = document.createElement("div");
 
-  // 🎨 컬러 팔레트 (필요하면 확장 가능)
+  // 🎨 컬러 팔레트 (필요하면 확장 가능) 나무 배치 엉망임 나중에 바꾸도록
   const colorPalette = [
-  "rgba(27, 94, 32, 0.75)",   // 0: 개잎갈나무 (Manchurian fir)
-  "rgba(76, 175, 80, 0.75)", // 1: 느티나무 (Zelkova)
-  "rgba(102, 187, 106, 0.75)", // 2: 단풍나무 (Maple)
-  "rgba(0, 105, 92, 0.75)",  // 3: 메타세쿼이아 (Dawn redwood)
-  "rgba(216, 27, 96, 0.65)", // 4: 배롱나무 (Crape myrtle)
-  "rgba(244, 143, 177, 0.65)", // 5: 벚나무 (Cherry tree)
-  "rgba(141, 110, 99, 0.7)", // 6: 산사나무 (Hawthorn)
-  "rgba(46, 125, 50, 0.75)", // 7: 소나무 (Pine)
-  "rgba(255, 235, 59, 0.7)", // 8: 은행나무 (Ginkgo)
-  "rgba(67, 160, 71, 0.75)", // 9: 잎갈나무 (Larch)
-  "rgba(38, 166, 154, 0.75)", // 10: 측백나무 (Oriental arborvitae)
+  "rgba(1, 1, 1, 1)", // 0: zero_index
+  "rgba(27, 94, 32, 0.75)",   // 1: 개잎갈나무 (Manchurian fir)
+  "rgba(76, 175, 80, 0.75)", // 2: 느티나무 (Zelkova)
+  "rgba(102, 187, 106, 0.75)", // 3: 단풍나무 (Maple)
+  "rgba(0, 105, 92, 0.75)",  // 4: 메타세쿼이아 (Dawn redwood)
+  "rgba(216, 27, 96, 0.65)", // 5: 배롱나무 (Crape myrtle)
+  "rgba(244, 143, 177, 0.65)", // 6: 벚나무 (Cherry tree)
+  "rgba(141, 110, 99, 0.7)", // 7: 산사나무 (Hawthorn)
+  "rgba(46, 125, 50, 0.75)", // 8:  (Pine)
+  "rgba(255, 235, 59, 0.7)", // 9: 소나무 (Ginkgo)
+  "rgba(67, 160, 71, 0.75)", // 10: 잎갈나무 (Larch)
+  "rgba(38, 166, 154, 0.75)", // 11: 잎갈나무 (Oriental arborvitae)
+  "rgba(38, 166, 154, 0.75)", // 12: 측백나무 (Oriental arborvitae)
 ];
 
   const markerColor = colorPalette[color % colorPalette.length]; // 안전 처리
@@ -44,5 +50,24 @@ export function createMarkerElement(size = 32, color = 4) {
 
   el.style.cursor = "pointer";
   el.style.border = "1px solid white";
+  return el;
+}
+
+export function createSelectedMarkerElement() {
+  const el = document.createElement("div");
+
+  el.style.width = "36px";
+  el.style.height = "36px";
+  el.style.cursor = "pointer";
+
+  const img = document.createElement("img");
+  img.src = selectedTreeIcon;
+  img.style.width = "36px";
+  img.style.height = "36px";
+  img.style.display = "block";
+  img.style.pointerEvents = "none";
+
+  el.appendChild(img);
+
   return el;
 }

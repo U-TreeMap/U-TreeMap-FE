@@ -1,32 +1,64 @@
 // src/features/map/loadTreeMarkers.js
 
 import mapboxgl from "mapbox-gl";
-import { createMarkerElement } from "./createMarkerEl";
+import { createMarkerElement,createSelectedMarkerElement } from "./createMarkerEl";
+// import { createSelectedMarkerElement } from "./createSelectedMarkerEl";
 
-let treeMarkers = []; // 🔥 전역 상태로 관리
+import { fetchAllTreeMarkers } from "../../api/utreeMap";
+import { useMapStore } from "../../stores/UseMapStore";
+
+let treeMarkers = [];
+
+// ✅ 선택 상태 관리
+let selectedTreeId = null;
+let selectedMarkerEl = null;
+let selectedOriginalEl = null;
 
 export async function loadTreeMarkers(map) {
   try {
-    const url = new URL("../../data/test/11_22_tree.json", import.meta.url);
-    const res = await fetch(url);
-    const json = await res.json();
+    const markers = await fetchAllTreeMarkers();
 
-    const teams = Object.keys(json);
+    markers.forEach((tree) => {
+      // 기본 마커
+      const el = createMarkerElement(
+        tree.markerValue / 150 + 10,
+        tree.speciesId
+      );
 
-    teams.forEach((team) => {
-      json[team].forEach((tree) => {
-        if (!tree.lat || !tree.lng) return;
+      el.addEventListener("click", (e) => {
+        e.stopPropagation();
 
-        const el = createMarkerElement(14, 4);
+        /** 1️⃣ 이전 선택 마커 복구 */
+        if (selectedMarkerEl && selectedOriginalEl) {
+          selectedMarkerEl.replaceWith(selectedOriginalEl);
+        }
 
-        const marker = new mapboxgl.Marker({ element: el })
-          .setLngLat([tree.lng, tree.lat])
+        /** 2️⃣ 현재 마커를 선택 상태로 변경 */
+        const selectedEl = createSelectedMarkerElement();
 
-        treeMarkers.push(marker);
+        // 클릭 이벤트 다시 연결 (중요!)
+        selectedEl.addEventListener("click", (e) => {
+          e.stopPropagation();
+          useMapStore.getState().setSelectedTreeId(tree.treeId);
+        });
+
+        el.replaceWith(selectedEl);
+
+        /** 3️⃣ 상태 저장 */
+        selectedMarkerEl = selectedEl;
+        selectedOriginalEl = el;
+        selectedTreeId = tree.treeId;
+
+        /** 4️⃣ zustand에 treeId 저장 */
+        useMapStore.getState().setSelectedTreeId(tree.treeId);
       });
+
+      const marker = new mapboxgl.Marker({ element: el })
+        .setLngLat([tree.longitude, tree.latitude]);
+
+      treeMarkers.push(marker);
     });
 
-    // 처음엔 지도에 안 올림 (줌 기준으로 제어)
     console.log(`🌳 Tree markers prepared: ${treeMarkers.length}`);
   } catch (err) {
     console.error("❌ Tree JSON Load Failed", err);
