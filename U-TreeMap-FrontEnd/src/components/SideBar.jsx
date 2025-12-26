@@ -1,7 +1,7 @@
 // 데이터 패칭 방식 ?
 import { useState } from 'react';
 // 데이터 & 아이콘
-import { mockTreeData, INITIAL_TREE_DATA, INITIAL_CONDITION_DATA } from '../data/mockTreeData';
+import { INITIAL_TREE_DATA, INITIAL_CONDITION_DATA } from '../data/mockTreeData';
 import TreeFilled from '../assets/icons/tree-filled.svg';
 import HomeIcon from '../assets/icons/home.svg';
 import UserIcon from '../assets/icons/user.svg';
@@ -13,7 +13,7 @@ import { SearchBar } from './UI/Searchbar';
 import { ToggleButton } from './UI/button';
 import TreeDetailContent from './UI/TreeDetailContent';
 
-export default function Sidebar() {
+export default function Sidebar({ selectedTree }) {
   const [isOpen, setIsOpen] = useState(true);
   const [searchText, setSearchText] = useState(''); // 검색어 상태 (디바운싱된 값 아님, 실제 필터링용)
 
@@ -22,9 +22,6 @@ export default function Sidebar() {
   const [selectedTrees, setSelectedTrees] = useState(['느티나무', '벚나무']);
   const [conditionOptions] = useState(INITIAL_CONDITION_DATA);
   const [selectedConditions, setSelectedConditions] = useState(['양호']);
-
-  // 데이터 (실제로는 여기서 필터링 로직이 들어갈 수 있음)
-  const selectedTree = mockTreeData;
 
   // SearchBar에서 디바운싱된 값을 받아 처리하는 함수
   const handleSearch = (keyword) => {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import GpsIcon from '../../assets/icons/gps.svg';
-import ArrowCycleL from '../../assets/icons/arrow_cycle_l.svg'; // 오타 수정: Cycle
+import ArrowCycleL from '../../assets/icons/arrow_cycle_l.svg';
 import ArrowCycleR from '../../assets/icons/arrow_cycle_r.svg';
 import CloudIcon from '../../assets/icons/cloud.svg';
 import { SpecBox } from './Sidebar/Box';
@@ -54,11 +54,15 @@ export default function TreeDetailContent({ selectedTree }) {
 
       {/* 5. 탄소 흡수량 카드 */}
       <div className="relative mt-[19px] text-center bg-white border-none rounded-2xl py-6">
-        {/* 위 화살표 */}
-        <img src={ArrowCycleR} alt="" className="absolute right-0 resize-noneight-0 -top-1" />
+        {/* 화살표 위치 고정용 투명 컨테이너 */}
+        {/* 최대 너비를 360px로 제한 */}
+        <div className="absolute inset-0 w-full max-w-[328px] mx-auto h-full pointer-events-none">
+          <img src={ArrowCycleR} alt="" className="absolute top-0 right-0" />
 
-        {/* 가운데 콘텐츠 */}
-        <div className="flex items-center justify-center gap-3 mb-2">
+          <img src={ArrowCycleL} alt="" className="absolute left-0 -bottom-2" />
+        </div>
+
+        <div className="relative z-10 flex items-center justify-center gap-3 mb-2">
           <div className="relative w-[60px] h-10 flex items-center justify-center">
             <img src={CloudIcon} alt="" />
             <span className="absolute text-[12px] font-bold text-[#1B5E20] pt-1">{selectedTree.carbon.amount}</span>
@@ -70,9 +74,6 @@ export default function TreeDetailContent({ selectedTree }) {
             <p className="text-[12px] font-semibold text-[#FFB700] leading-[18px]">→ {selectedTree.carbon.effect}</p>
           </div>
         </div>
-
-        {/* 아래 화살표 */}
-        <img src={ArrowCycleL} alt="" className="absolute left-0 -bottom-1" />
       </div>
 
       {/* 6. 스펙 그리드 */}
