@@ -1,0 +1,12 @@
+// src/api/utreeMap.ts
+import { apiClient } from "../lib/apiClient";
+
+export async function fetchRegionSummary() {
+  const res = await apiClient.get("/api/v1/utree-map");
+  return res.data;
+}
+
+export async function fetchAllTreeMarkers() {
+  const res = await apiClient.get("/api/v1/utree-map/markers");
+  return res.data;
+}

@@ -5,6 +5,9 @@ import target from "../../assets/icons/map/target.svg";
 import { zoomIn, zoomOut } from "../../features/map/controlZoom";
 import { showMyLocationOnce } from "../../features/map/locateMe";
 
+import MapControlsDesktop from "./MapControlsDesktop";
+import MapControlsMobile from "./MapControlsMobile";
+
 export default function MapControls({ map, isMobile }) {
   if (!map) return null;
 
@@ -28,46 +31,49 @@ export default function MapControls({ map, isMobile }) {
   const mobile_rocate = "w-[48px] h-[48px] p-[12px] rounded-[24px]"
   const desktop_rocate = "w-[28px] h-[28px] p-[7px] rounded-[14px]"
 
-  return (
-    <div className="absolute bottom-7 right-4 z-10 flex flex-col gap-[10px]">
+  return ( <div>{isMobile ? <MapControlsMobile map={map}/> : <MapControlsDesktop map={map}/>}</div>
+    
+    // <div>
+  //   <div className="absolute bottom-7 right-4 z-10 flex flex-col gap-[10px]">
 
-      {/* 📍 내 위치 버튼 */}
-      <div
-        onClick={() => showMyLocationOnce(map)}
-        className={`${buttonBase} ${isMobile ? mobile_rocate : desktop_rocate } bg-white ${shadowNormal} ${shadowHover}`}
-      >
-        <img
-          src={target}
-          className={`${isMobile ? mobile_mod : desktop_mod} pointer-events-none`}
-        />
-      </div>
+  //     {/* 📍 내 위치 버튼 */}
+  //     <div
+  //       onClick={() => showMyLocationOnce(map)}
+  //       className={`${buttonBase} ${isMobile ? mobile_rocate : desktop_rocate } bg-white ${shadowNormal} ${shadowHover}`}
+  //     >
+  //       <img
+  //         src={target}
+  //         className={`${isMobile ? mobile_mod : desktop_mod} pointer-events-none`}
+  //       />
+  //     </div>
 
-      {/* 🔍 줌 버튼 박스 */}
-      <div className={isMobile ? mobileZoomBox : desktopZoomBox}>
+  //     {/* 🔍 줌 버튼 박스 */}
+  //     <div className={isMobile ? mobileZoomBox : desktopZoomBox}>
 
-        {/* ➖ Zoom Out */}
-        <div
-          onClick={() => zoomOut(map)}
-          className={`${buttonBase} ${isMobile ? mobile_mod : desktop_mod}`}
-        >
-          <img
-            src={minus}
-            className={`${isMobile ? mobile_mod : desktop_mod} pointer-events-none [filter:drop-shadow(2px_2px_6px_rgba(0,0,0,0.25))]`}
-          />
-        </div>
+  //       {/* ➖ Zoom Out */}
+  //       <div
+  //         onClick={() => zoomOut(map)}
+  //         className={`${buttonBase} ${isMobile ? mobile_mod : desktop_mod}`}
+  //       >
+  //         <img
+  //           src={minus}
+  //           className={`${isMobile ? mobile_mod : desktop_mod} pointer-events-none [filter:drop-shadow(2px_2px_6px_rgba(0,0,0,0.25))]`}
+  //         />
+  //       </div>
 
-        {/* ➕ Zoom In */}
-        <div
-          onClick={() => zoomIn(map)}
-          className={`${buttonBase} ${isMobile ? mobile_mod : desktop_mod}`}
-        >
-          <img
-            src={plus}
-            className={`${isMobile ? mobile_mod : desktop_mod} pointer-events-none [filter:drop-shadow(2px_2px_6px_rgba(0,0,0,0.25))]`}
-          />
-        </div>
-      </div>
+  //       {/* ➕ Zoom In */}
+  //       <div
+  //         onClick={() => zoomIn(map)}
+  //         className={`${buttonBase} ${isMobile ? mobile_mod : desktop_mod}`}
+  //       >
+  //         <img
+  //           src={plus}
+  //           className={`${isMobile ? mobile_mod : desktop_mod} pointer-events-none [filter:drop-shadow(2px_2px_6px_rgba(0,0,0,0.25))]`}
+  //         />
+  //       </div>
+  //     </div>
 
-    </div>
+  //   </div>
+  // </div>
   );
 }
