@@ -1,7 +1,7 @@
 // src/features/map/loadTreeMarkers.js
 
 import mapboxgl from "mapbox-gl";
-import { createMarkerElement,createSelectedMarkerElement } from "./createMarkerEl";
+import { createMarkerElement, changeSellectedMarker} from "./createMarkerEl";
 // import { createSelectedMarkerElement } from "./createSelectedMarkerEl";
 
 import { fetchAllTreeMarkers } from "../../api/utreeMap";
@@ -17,7 +17,6 @@ let selectedOriginalEl = null;
 export async function loadTreeMarkers(map) {
   try {
     const markers = await fetchAllTreeMarkers();
-
     markers.forEach((tree) => {
       // 기본 마커
       const el = createMarkerElement(
@@ -27,26 +26,27 @@ export async function loadTreeMarkers(map) {
 
       el.addEventListener("click", (e) => {
         e.stopPropagation();
-
         /** 1️⃣ 이전 선택 마커 복구 */
+        if(tree.id === selectedTreeId){
+          return;
+        }
         if (selectedMarkerEl && selectedOriginalEl) {
-          selectedMarkerEl.replaceWith(selectedOriginalEl);
+          selectedMarkerEl.innerHTML = selectedOriginalEl.html;
+          selectedMarkerEl.style.cssText = selectedOriginalEl.cssText;
         }
 
-        /** 2️⃣ 현재 마커를 선택 상태로 변경 */
-        const selectedEl = createSelectedMarkerElement();
 
-        // 클릭 이벤트 다시 연결 (중요!)
-        selectedEl.addEventListener("click", (e) => {
-          e.stopPropagation();
-          useMapStore.getState().setSelectedTreeId(tree.treeId);
-        });
+        //원본 상태 저장
+        selectedOriginalEl = {
+          html: el.innerHTML,
+          cssText: el.style.cssText,
+        };
 
-        el.replaceWith(selectedEl);
+        /** 2️⃣ 현재 마커를 선택 상태로 변경 순수함수 아니라서 조심해야됨.*/ 
+        changeSellectedMarker(el);
 
         /** 3️⃣ 상태 저장 */
-        selectedMarkerEl = selectedEl;
-        selectedOriginalEl = el;
+        selectedMarkerEl = el;
         selectedTreeId = tree.treeId;
 
         /** 4️⃣ zustand에 treeId 저장 */

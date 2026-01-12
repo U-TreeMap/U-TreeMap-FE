@@ -53,12 +53,18 @@ export function createMarkerElement(size = 32, color = 4) {
   return el;
 }
 
-export function createSelectedMarkerElement() {
-  const el = document.createElement("div");
-
-  el.style.width = "36px";
-  el.style.height = "36px";
-  el.style.cursor = "pointer";
+/**
+ * @param {HTMLElement} markerEl - 선택됨 상태로 바꾸고 싶은 맵박스 마커
+ * 함수에 인자로 들어온 맵박스 마커를 선택됨 상태로 바꾸어 줍니다.
+ * 순수함수 아니니깐 조심하세요 : 리턴은 없음
+ */
+export function changeSellectedMarker(markerEl) {
+  markerEl.innerHTML = ""; // 기존 원형 제거
+  markerEl.style.width = "36px";
+  markerEl.style.height = "36px";
+  markerEl.style.borderRadius = "0";           // 필요시
+  markerEl.style.backgroundColor = "transparent";
+  markerEl.style.border = "0";
 
   const img = document.createElement("img");
   img.src = selectedTreeIcon;
@@ -66,8 +72,6 @@ export function createSelectedMarkerElement() {
   img.style.height = "36px";
   img.style.display = "block";
   img.style.pointerEvents = "none";
+  markerEl.appendChild(img);
 
-  el.appendChild(img);
-
-  return el;
 }
