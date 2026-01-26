@@ -20,16 +20,15 @@ import TreeNameSearchModal from './components/TreeData/TreeNameSearchModal';
 
 export default function App() {
   const isMobile = useIsMobile();
-  
 
-  //const [selectedTree, setSelectedTree] = useState(mockTreeData);
-  const { tree, loading} = useSelectedTree(); 
+  const [selectedTree, setSelectedTree] = useState(mockTreeData);
+  // const { tree, loading} = useSelectedTree();
 
   return (
     <div className="relative w-screen h-screen overflow-hidden">
-      <TreeNameSearchModal></TreeNameSearchModal>
-      {/* <MapBox isMobile={isMobile} />
-      {isMobile ? <MobilePage selectedTree={tree} /> : <MainPage selectedTree={tree} />} */}
+      <MapBox isMobile={isMobile} />
+
+      {isMobile ? <MobilePage selectedTree={tree} /> : <MainPage selectedTree={tree} />}
     </div>
   );
 }
