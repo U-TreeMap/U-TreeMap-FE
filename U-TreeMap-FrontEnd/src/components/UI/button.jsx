@@ -1,6 +1,6 @@
 // sidebar.jsx 에서 사용한 TabButton
 import LeftArrowS from '../../assets/icons/left_arrow_s.svg';
-import RightArrow from '../../assets/icons/right_arrow.svg';
+import RightArrow from '../../assets/icons/right_arrow_s.svg';
 
 export const TabButton = ({ label, isActive, onClick }) => (
   <button
