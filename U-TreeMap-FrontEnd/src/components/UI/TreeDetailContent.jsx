@@ -2,29 +2,10 @@ import { useState } from 'react';
 import GpsIcon from '../../assets/icons/gps.svg';
 import { SpecBox } from './Sidebar/Box';
 import { TabButton } from './button';
-import TreeIcon from '../../assets/icons/tree.svg';
-import TreeIconFilled from '../../assets/icons/tree-filled.svg';
-import { useEffect } from 'react';
-export default function TreeDetailContent({ selectedTree }) {
+import TreeLikeButton from './TreeLikeButton';
+export default function TreeDetailContent({ selectedTree, hideLikeButton = false }) {
   const [activeTab, setActiveTab] = useState('morphology');
-  const [isLiked, setIsLiked] = useState(false);
 
-  useEffect(() => {
-    if (selectedTree) {
-      setIsLiked(selectedTree.isLiked || false);
-    }
-  }, [selectedTree]);
-  const handleToggleLike = async () => {
-    const previousState = isLiked;
-    setIsLiked(!previousState);
-
-    try {
-      console.log(`Tree ID ${selectedTree.id} 좋아요 변경: ${!previousState}`);
-    } catch (error) {
-      console.error('좋아요 요청 실패:', error);
-      setIsLiked(previousState);
-    }
-  };
   const environmentalData = [
     {
       id: 1,
@@ -63,13 +44,7 @@ export default function TreeDetailContent({ selectedTree }) {
         <div className="flex items-start justify-between">
           <p className="text-[14px] font-medium text-[#939393] mb-[5px]">{selectedTree.id}</p>
           {/* 나무 좋아요 아이콘 */}
-          <button
-            onClick={handleToggleLike}
-            className="transition-transform cursor-pointer hover:scale-110 active:scale-95"
-            aria-label={isLiked ? '좋아요 취소' : '좋아요'}
-          >
-            <img src={isLiked ? TreeIconFilled : TreeIcon} alt="tree like icon" />
-          </button>
+          {!hideLikeButton && <TreeLikeButton treeId={selectedTree.id} initialLiked={selectedTree.isLiked} />}
         </div>
         {/* 나무 이름 및 학명 */}
         <div className="flex items-center ">

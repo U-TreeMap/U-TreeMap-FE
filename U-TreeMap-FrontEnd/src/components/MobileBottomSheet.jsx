@@ -3,8 +3,7 @@ import { Drawer } from 'vaul';
 import TreeDetailContent from './UI/TreeDetailContent';
 import TreeIcon from '../assets/icons/tree.svg';
 import ArrowL from '../assets/icons/left_arrow.svg';
-import CancleIcon from '../assets/icons/cancel.svg';
-
+import TreeLikeButton from './UI/TreeLikeButton';
 export default function MobileBottomSheet({ selectedTree }) {
   const [snap, setSnap] = useState('130px');
 
@@ -44,15 +43,7 @@ export default function MobileBottomSheet({ selectedTree }) {
                 <button onClick={() => setSnap('130px')} className="">
                   <img src={ArrowL} alt="Back" />
                 </button>
-                <div className="flex col gap-2.5">
-                  <div>
-                    <img src={TreeIcon} alt="Tree" />
-                  </div>
-
-                  <button onClick={() => setSnap('130px')} className="">
-                    <img src={CancleIcon} alt="Close" />
-                  </button>
-                </div>
+                <TreeLikeButton treeId={selectedTree.id} initialLiked={selectedTree.isLiked} />
               </div>
             ) : (
               /* (핸들바 모드) */
@@ -64,7 +55,7 @@ export default function MobileBottomSheet({ selectedTree }) {
 
           {/* === 컨텐츠 영역 === */}
           <div className="flex-1 w-full pb-10 pl-4 pr-2.5 overflow-y-auto bg-white">
-            <TreeDetailContent selectedTree={selectedTree} />
+            <TreeDetailContent selectedTree={selectedTree} hideLikeButton={true} />
           </div>
         </Drawer.Content>
       </Drawer.Portal>
