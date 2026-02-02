@@ -109,7 +109,7 @@ export async function loadUlsanSubmunicipalities(map) {
         labelValueExpression,
         { "font-scale": 0.95 },
       ],
-      "text-font": ["Noto Sans KR Bold", "Open Sans Bold"],
+      //"text-font": ["Noto Sans KR Bold", "Open Sans Bold"],
       "text-size": 14,
       "text-anchor": "center",
       "text-allow-overlap": false,
