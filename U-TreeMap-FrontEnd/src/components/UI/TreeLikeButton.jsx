@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import TreeIcon from '../../assets/icons/tree.svg';
-import TreeIconFilled from '../../assets/icons/tree-filled.svg';
+import TreeIconFilled from '../../assets/icons/tree-filled-green.svg';
 
 export default function TreeLikeButton({ treeId, initialLiked, onToggle }) {
   const [isLiked, setIsLiked] = useState(initialLiked || false);
