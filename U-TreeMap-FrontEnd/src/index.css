@@ -2,11 +2,9 @@
 
 @import 'tailwindcss';
 
-
-/* 1. Tailwind 테마 변수 재정의 (v4 방식) */
 @theme {
-  /* --font-sans 변수를 덮어쓰면 font-sans 클래스가 이 폰트로 바뀝니다 */
-  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-sans: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+    "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
 }
 
 /* 2. HTML 태그에 강제 적용 (전역 설정) */
