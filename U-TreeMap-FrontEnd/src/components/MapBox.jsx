@@ -44,11 +44,11 @@ export default function MapBox({
     });
 
     // 지도범위 제한 in 울산광역시
-    const ULSAN_MAX_BOUNDS = [
-      [128.9, 35.3], // southwest
-      [129.6, 35.8], // northeast
-    ];
-    map.setMaxBounds(ULSAN_MAX_BOUNDS);
+    // const ULSAN_MAX_BOUNDS = [
+    //   [128.9, 35.3], // southwest
+    //   [129.6, 35.8], // northeast
+    // ];
+    // map.setMaxBounds(ULSAN_MAX_BOUNDS);
 
     // 🔒 지도 회전 & 기울기 제스처 차단
     map.dragRotate.disable();
