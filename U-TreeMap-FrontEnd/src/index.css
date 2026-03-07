@@ -65,3 +65,13 @@ body,
   background: rgba(30, 136, 229, 0.5);
   animation: pulse 1.6s ease-out infinite;
 }
+
+@layer utilities {
+  @keyframes gps-progress {
+    from { width: 0%; }
+    to   { width: 100%; }
+  }
+  .animate-gps-progress {
+    animation: gps-progress 10s linear forwards;
+  }
+}

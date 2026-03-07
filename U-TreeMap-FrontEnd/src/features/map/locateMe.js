@@ -1,6 +1,4 @@
 import mapboxgl from "mapbox-gl";
-
-
 let myLocationMarker = null;
 let removeTimer = null;
 
@@ -28,20 +26,21 @@ function isInsideUlsan(lat, lng) {
 /**
  * 내 위치 표시 (울산 내부 + 펄스 + 15초 후 제거)
  */
-export function showMyLocationOnce(map) {
+export async function showMyLocationOnce(map) {
+
   if (!map || !navigator.geolocation) return;
 
   navigator.geolocation.getCurrentPosition(
     (position) => {
       const { latitude, longitude } = position.coords;
 
-      // ❌ 울산 외부면 중단
-      if (!isInsideUlsan(latitude, longitude)) {
-        alert(
-          "이 서비스는 울산광역시 내에서만 이용할 수 있습니다.\n현재 위치에서는 내 위치 찾기 기능을 사용할 수 없습니다."
-        );
-        return;
-      }
+      // // ❌ 울산 외부면 중단 : 테스트를 위해 꺼둠.
+      // if (!isInsideUlsan(latitude, longitude)) {
+      //   alert(
+      //     "이 서비스는 울산광역시 내에서만 이용할 수 있습니다.\n현재 위치에서는 내 위치 찾기 기능을 사용할 수 없습니다."
+      //   );
+      //   return;
+      // }
 
       // 🧹 기존 마커 제거
       if (myLocationMarker) {
