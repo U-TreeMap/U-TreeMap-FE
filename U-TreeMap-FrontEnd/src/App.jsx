@@ -28,7 +28,7 @@ export default function App() {
     <div className="relative w-screen h-screen overflow-hidden">
       <MapBox isMobile={isMobile} />
 
-      {isMobile ? <MobilePage selectedTree={tree} /> : <MainPage selectedTree={tree} />}
+      {isMobile ? <MobilePage selectedTree={selectedTree} /> : <MainPage selectedTree={selectedTree} />}
     </div>
   );
 }
