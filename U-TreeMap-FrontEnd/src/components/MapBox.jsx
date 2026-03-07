@@ -36,11 +36,17 @@ export default function MapBox({
 
     if (mapRef.current) return;
 
+    
+
+    const MIN_ZOOM = 10;
+    const MAX_ZOOM = 20;
     const map = new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v12",
       center,
       zoom,
+      minZoom:MIN_ZOOM,
+      maxZoom:MAX_ZOOM,
       pitch: 0,    // 🔒 기울기 제거
       bearing: 0,  // 🔒 회전 제거
     });

@@ -59,10 +59,10 @@ import {
 export const ZOOM_LEVEL = {
 
   // 광역시 표시 기준
-  METROPOLITAN: 7,
+  METROPOLITAN: 10,
 
   // 구·군 표시 기준
-  DISTRICT: 10,
+  DISTRICT: 11,
 
   // 읍·면·동 표시 기준
   SUBMUNICIPALITY: 13,
