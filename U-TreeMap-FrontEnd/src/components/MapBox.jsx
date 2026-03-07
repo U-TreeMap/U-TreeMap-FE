@@ -9,6 +9,8 @@ import { loadUlsanSubmunicipalities } from "../features/map/loadUlsanSubmunicipa
 import { setupZoomController } from "../features/map/zoomController";
 
 import MapControls from "./UI/MapControls";
+import { loadUlsanDistricts } from "../features/map/loadUlsanDistricts";
+import { loadUlsanMetropolitanCity } from "../features/map/loadUlsanMetropolitanCity";
 
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
 
@@ -34,11 +36,17 @@ export default function MapBox({
 
     if (mapRef.current) return;
 
+    
+
+    const MIN_ZOOM = 10;
+    const MAX_ZOOM = 20;
     const map = new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v12",
       center,
       zoom,
+      minZoom:MIN_ZOOM,
+      maxZoom:MAX_ZOOM,
       pitch: 0,    // 🔒 기울기 제거
       bearing: 0,  // 🔒 회전 제거
     });
@@ -61,6 +69,8 @@ export default function MapBox({
     map.on("load", async () => {
       await loadTreeMarkers(map);
       await loadUlsanSubmunicipalities(map);
+      await loadUlsanDistricts(map);
+      await loadUlsanMetropolitanCity(map);
       setupZoomController(map);
     });
 
