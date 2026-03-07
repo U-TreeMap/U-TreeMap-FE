@@ -5,15 +5,14 @@ import {
   HEATMAP_RANGE,
 } from "./heatmapConfig";
 
-
 /**
- * 울산 읍·면·동 GeoJSON을 지도에 로딩
+ * 울산 광역시 단위 GeoJSON을 지도에 로딩
  * @param {mapboxgl.Map} map
  */
-export async function loadUlsanSubmunicipalities(map) {
+export async function loadUlsanMetropolitanCity(map) {
   // 1️⃣ GeoJSON 불러오기
   const geoUrl = new URL(
-    "../../data/geojson/ulsan_submunicipalities_2018.geojson",
+    "../../data/geojson/ulsan_metropolitan_2018.json",
     import.meta.url
   );
   const geoRes = await fetch(geoUrl);
@@ -21,7 +20,7 @@ export async function loadUlsanSubmunicipalities(map) {
 
   // 2️⃣ 통계 JSON 불러오기
   const statUrl = new URL(
-    "../../data/geojson/ulsan_submunicipalities_dummy.json",
+    "../../data/geojson/ulsan_metropolitan_dummy.json",
     import.meta.url
   );
   const statRes = await fetch(statUrl);
@@ -43,7 +42,7 @@ export async function loadUlsanSubmunicipalities(map) {
   });
 
   // 🟢 Source 추가
-  map.addSource("ulsan-emd", {
+  map.addSource("ulsan-city", {
     type: "geojson",
     data: geojson,
     promoteId: "code",
@@ -56,14 +55,14 @@ export async function loadUlsanSubmunicipalities(map) {
 
   // 🟩 면 채우기
   map.addLayer({
-    id: "ulsan-emd-fill",
+    id: "ulsan-city-fill",
     type: "fill",
-    source: "ulsan-emd",
+    source: "ulsan-city",
     paint: {
       "fill-color": [
         "case",
         ["boolean", ["feature-state", "hover"], false],
-        "#004D40", // hover 시
+        "#004D40",
         [
           "interpolate",
           ["linear"],
@@ -73,45 +72,43 @@ export async function loadUlsanSubmunicipalities(map) {
           HEATMAP_RANGE.MAX, "#1B5E20",
         ],
       ],
-      "fill-opacity": 0.6,
+      "fill-opacity": 0.35,
     },
   });
 
   // 🟫 경계선
   map.addLayer({
-    id: "ulsan-emd-line",
+    id: "ulsan-city-line",
     type: "line",
-    source: "ulsan-emd",
+    source: "ulsan-city",
     paint: {
       "line-color": "#1B5E20",
-      "line-width": 1,
+      "line-width": 3,
     },
   });
 
-  //라벨값 변경 토글? (숫자 콤마)
   const labelValueExpression =
     CURRENT_LABEL_MODE == LABEL_MODE.TREE
-    ? ["number-format", ["get", "treeCount"], { locale: "ko-KR" }]
-    : ["number-format", ["get", "carbonStorage"], { locale: "ko-KR" }];
+      ? ["number-format", ["get", "treeCount"], { locale: "ko-KR" }]
+      : ["number-format", ["get", "carbonStorage"], { locale: "ko-KR" }];
 
   // 텍스트 라벨
   map.addLayer({
-    id: "ulsan-emd-label",
+    id: "ulsan-city-label",
     type: "symbol",
-    source: "ulsan-emd",
+    source: "ulsan-city",
     layout: {
       "text-field": [
         "format",
-        ["get", "name"], { "font-scale": 1.15 },
+        ["get", "name"], { "font-scale": 1.25 },
         "\n",
         {},
         labelValueExpression,
-        { "font-scale": 0.95 },
+        { "font-scale": 1.0 },
       ],
-      //"text-font": ["Noto Sans KR Bold", "Open Sans Bold"],
-      "text-size": 14,
+      "text-size": 18,
       "text-anchor": "center",
-      "text-allow-overlap": false,
+      "text-allow-overlap": true,
     },
     paint: {
       "text-color": "#ffffff",
@@ -120,28 +117,26 @@ export async function loadUlsanSubmunicipalities(map) {
     },
   });
 
-
-  console.log("%c🧩 Ulsan submunicipalities loaded", "color:#2E7D32;font-weight:bold;");
+  console.log(
+    "%c🧩 Ulsan metropolitan city loaded",
+    "color:#1565C0;font-weight:bold;"
+  );
 }
 
-export function showUlsanSubmunicipalitiesPolygons(map) {
-  map.setLayoutProperty("ulsan-emd-fill", "visibility", "visible");
-  map.setLayoutProperty("ulsan-emd-line", "visibility", "visible");
-  console.log("polygon visualbe🐵");
+export function showUlsanMetropolitanPolygons(map) {
+  map.setLayoutProperty("ulsan-city-fill", "visibility", "visible");
+  map.setLayoutProperty("ulsan-city-line", "visibility", "visible");
 }
 
-export function hideUlsanSubmunicipalitiesPolygons(map) {
-  map.setLayoutProperty("ulsan-emd-fill", "visibility", "none");
-  map.setLayoutProperty("ulsan-emd-line", "visibility", "none");
-  console.log("polygon unvisuable🙈");
+export function hideUlsanMetropolitanPolygons(map) {
+  map.setLayoutProperty("ulsan-city-fill", "visibility", "none");
+  map.setLayoutProperty("ulsan-city-line", "visibility", "none");
 }
 
-// 🏷 읍·면·동 라벨 보이기
-export function showUlsanSubmunicipalitiesLabels(map) {
-  map.setLayoutProperty("ulsan-emd-label", "visibility", "visible");
+export function showUlsanMetropolitanLabels(map) {
+  map.setLayoutProperty("ulsan-city-label", "visibility", "visible");
 }
 
-// 🏷 읍·면·동 라벨 숨기기
-export function hideUlsanSubmunicipalitiesLabels(map) {
-  map.setLayoutProperty("ulsan-emd-label", "visibility", "none");
+export function hideUlsanMetropolitanLabels(map) {
+  map.setLayoutProperty("ulsan-city-label", "visibility", "none");
 }

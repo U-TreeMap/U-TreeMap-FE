@@ -1,0 +1,37 @@
+[
+  {
+    "code": "26010",
+    "name": "중구",
+    "name_eng": "Jung-gu",
+    "treeCount": 101101,
+    "carbonStorage": 101101
+  },
+  {
+    "code": "26020",
+    "name": "남구",
+    "name_eng": "Nam-gu",
+    "treeCount": 99991,
+    "carbonStorage": 99991
+  },
+  {
+    "code": "26030",
+    "name": "동구",
+    "name_eng": "Dong-gu",
+    "treeCount": 69993,
+    "carbonStorage": 69993
+  },
+  {
+    "code": "26040",
+    "name": "북구",
+    "name_eng": "Buk-gu",
+    "treeCount": 62216,
+    "carbonStorage": 62216
+  },
+  {
+    "code": "26310",
+    "name": "울주군",
+    "name_eng": "Ulju-gun",
+    "treeCount": 93324,
+    "carbonStorage": 93324
+  }
+]

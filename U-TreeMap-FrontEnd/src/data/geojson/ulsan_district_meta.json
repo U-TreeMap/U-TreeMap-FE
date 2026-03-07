@@ -1,0 +1,27 @@
+[
+  {
+    "code": "26010",
+    "name": "중구",
+    "name_eng": "Jung-gu"
+  },
+  {
+    "code": "26020",
+    "name": "남구",
+    "name_eng": "Nam-gu"
+  },
+  {
+    "code": "26030",
+    "name": "동구",
+    "name_eng": "Dong-gu"
+  },
+  {
+    "code": "26040",
+    "name": "북구",
+    "name_eng": "Buk-gu"
+  },
+  {
+    "code": "26310",
+    "name": "울주군",
+    "name_eng": "Ulju-gun"
+  }
+]
