@@ -22,7 +22,7 @@ export default function App() {
   const isMobile = useIsMobile();
 
   const [selectedTree, setSelectedTree] = useState(mockTreeData);
-  // const { tree, loading} = useSelectedTree();
+  const { tree, loading} = useSelectedTree();
 
   return (
     <div className="relative w-screen h-screen overflow-hidden">
