@@ -9,6 +9,8 @@ import { loadUlsanSubmunicipalities } from "../features/map/loadUlsanSubmunicipa
 import { setupZoomController } from "../features/map/zoomController";
 
 import MapControls from "./UI/MapControls";
+import { loadUlsanDistricts } from "../features/map/loadUlsanDistricts";
+import { loadUlsanMetropolitanCity } from "../features/map/loadUlsanMetropolitanCity";
 
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
 
@@ -61,6 +63,8 @@ export default function MapBox({
     map.on("load", async () => {
       await loadTreeMarkers(map);
       await loadUlsanSubmunicipalities(map);
+      await loadUlsanDistricts(map);
+      await loadUlsanMetropolitanCity(map);
       setupZoomController(map);
     });
 
