@@ -27,7 +27,7 @@ export default function MapControlsMobile({ map }) {
     "active:bg-black/5 hover:bg-black/5"; // 데스크탑에서도 자연스러운 정도
 
   return (
-    <div className="absolute bottom-[142px] right-4 z-10 flex flex-col gap-[10px]">
+    <div className="absolute bottom-[50px] right-4 z-10 flex flex-col gap-[10px]">
       {/* 🔍 줌 컨트롤: 한 덩어리로 붙이기 */}
       <div
         className={`flex flex-col overflow-hidden ${ROUND} ${surface}`}
