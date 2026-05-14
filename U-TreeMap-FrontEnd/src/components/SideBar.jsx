@@ -1,28 +1,34 @@
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { ToggleButton } from './UI/button';
 import NavigationRail from './UI/Sidebar/SidebarContents/NavigationRail';
 import HomeContent from './UI/Sidebar/SidebarContents/HomeContent';
 import MyTreeContent from './UI/Sidebar/SidebarContents/MyTreeContent';
 import ProfileContent from './UI/Sidebar/SidebarContents/ProfileContent';
-export const TABS = {
-  HOME: 'HOME',
-  MY_TREE: 'MY_TREE',
-  PROFILE: 'PROFILE',
-};
+import AdminContent from './UI/Sidebar/SidebarContents/AdminContent';
+import { ROUTES } from '../routes/routePaths';
 
-export default function Sidebar({ selectedTree }) {
+function getSidebarView(pathname) {
+  if (pathname === ROUTES.MY_TREES || pathname === ROUTES.MY_TREE_ALIAS) return 'my-trees';
+  if (pathname === ROUTES.PROFILE || pathname === ROUTES.PROFILE_INFO || pathname === ROUTES.PROFILE_EDIT) return 'profile';
+  if (pathname.startsWith(ROUTES.ADMIN)) return 'admin';
+  if (pathname === ROUTES.MAP || pathname === ROUTES.ROOT) return 'map';
+  return undefined;
+}
+
+export default function Sidebar({ selectedTree, view = 'map' }) {
   const [isOpen, setIsOpen] = useState(true);
-  const [activeTab, setActiveTab] = useState(TABS.HOME); // 기본값 HOME
+  const { pathname } = useLocation();
+  const currentView = getSidebarView(pathname) || view;
 
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
+  const handleNavigate = () => {
     if (!isOpen) setIsOpen(true);
   };
 
   return (
     <div className="absolute top-0 left-0 z-20 flex h-full font-sans border-none pointer-events-none">
       {/* 1. 네비게이션 레일 (탭 제어) */}
-      <NavigationRail activeTab={activeTab} onTabChange={handleTabChange} />
+      <NavigationRail onNavigate={handleNavigate} />
 
       {/* 2. 정보 패널 (슬라이드 애니메이션) */}
       <aside className="relative z-20 flex h-full pointer-events-auto">
@@ -43,9 +49,10 @@ export default function Sidebar({ selectedTree }) {
             `}
           >
             {/* 탭 조건부 렌더링 */}
-            {activeTab === TABS.HOME && <HomeContent selectedTree={selectedTree} />}
-            {activeTab === TABS.MY_TREE && <MyTreeContent />}
-            {activeTab === TABS.PROFILE && <ProfileContent />}
+            {currentView === 'map' && <HomeContent selectedTree={selectedTree} />}
+            {currentView === 'my-trees' && <MyTreeContent />}
+            {currentView === 'profile' && <ProfileContent />}
+            {currentView === 'admin' && <AdminContent />}
           </div>
         </div>
 

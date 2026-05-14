@@ -1,8 +1,10 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import LeftArrow from "../../assets/icons/white_left_arrow.svg?react";
 import RightArrowS from "../../assets/icons/right_arrow_s.svg?react";
 
 export default function TreeEditRequestPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="flex h-screen w-[360px] flex-col bg-white">
       {/* Header */}
@@ -11,6 +13,7 @@ export default function TreeEditRequestPage() {
           {/* Back */}
           <button
             type="button"
+            onClick={() => navigate(-1)}
             className="inline-flex h-10 w-10 items-center justify-center rounded-full active:bg-white/10"
             aria-label="뒤로가기"
           >
