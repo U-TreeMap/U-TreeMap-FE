@@ -1,0 +1,12 @@
+[
+  {
+    "code": "KR",
+    "name": "대한민국",
+    "name_eng": "South Korea",
+    "base_year": "2018",
+    "sidoCount": 17,
+    "sigunguCount": 250,
+    "emdCount": 3504,
+    "source": "southkorea/southkorea-maps kostat/2018"
+  }
+]
