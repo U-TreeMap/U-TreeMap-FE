@@ -1,0 +1,189 @@
+[
+  {
+    "sidoCode": "11",
+    "file": "/data/geojson/korea/sigungu-by-sido/11.json",
+    "featureCount": 25,
+    "bbox": [
+      126.76448395860741,
+      37.42880858693607,
+      127.18353917115842,
+      37.70145528326448
+    ]
+  },
+  {
+    "sidoCode": "21",
+    "file": "/data/geojson/korea/sigungu-by-sido/21.json",
+    "featureCount": 16,
+    "bbox": [
+      128.76537776085996,
+      34.978253171472396,
+      129.30575263452363,
+      35.38903744949351
+    ]
+  },
+  {
+    "sidoCode": "22",
+    "file": "/data/geojson/korea/sigungu-by-sido/22.json",
+    "featureCount": 8,
+    "bbox": [
+      128.35147571427265,
+      35.60653989893914,
+      128.76133223234132,
+      36.0161651229718
+    ]
+  },
+  {
+    "sidoCode": "23",
+    "file": "/data/geojson/korea/sigungu-by-sido/23.json",
+    "featureCount": 10,
+    "bbox": [
+      124.60971767835858,
+      36.92685008696321,
+      126.79369544519186,
+      37.984243057763805
+    ]
+  },
+  {
+    "sidoCode": "24",
+    "file": "/data/geojson/korea/sigungu-by-sido/24.json",
+    "featureCount": 5,
+    "bbox": [
+      126.64497761149687,
+      35.05102029910285,
+      127.02227522577896,
+      35.25870397614199
+    ]
+  },
+  {
+    "sidoCode": "25",
+    "file": "/data/geojson/korea/sigungu-by-sido/25.json",
+    "featureCount": 5,
+    "bbox": [
+      127.24665299613605,
+      36.18310005813703,
+      127.55967899208213,
+      36.500230631154096
+    ]
+  },
+  {
+    "sidoCode": "26",
+    "file": "/data/geojson/korea/sigungu-by-sido/26.json",
+    "featureCount": 5,
+    "bbox": [
+      128.97119034737432,
+      35.32805286349026,
+      129.46465956927784,
+      35.72491979030361
+    ]
+  },
+  {
+    "sidoCode": "29",
+    "file": "/data/geojson/korea/sigungu-by-sido/29.json",
+    "featureCount": 1,
+    "bbox": [
+      127.1277299100989,
+      36.40675840144778,
+      127.41080358060464,
+      36.73382187394906
+    ]
+  },
+  {
+    "sidoCode": "31",
+    "file": "/data/geojson/korea/sigungu-by-sido/31.json",
+    "featureCount": 42,
+    "bbox": [
+      126.37899141795003,
+      36.89377501763133,
+      127.84811314078996,
+      38.28226054929343
+    ]
+  },
+  {
+    "sidoCode": "32",
+    "file": "/data/geojson/korea/sigungu-by-sido/32.json",
+    "featureCount": 18,
+    "bbox": [
+      127.09503732073851,
+      37.02783248915859,
+      129.36567160966254,
+      38.61370930539022
+    ]
+  },
+  {
+    "sidoCode": "33",
+    "file": "/data/geojson/korea/sigungu-by-sido/33.json",
+    "featureCount": 14,
+    "bbox": [
+      127.27565045692062,
+      36.01222612299602,
+      128.65209649942307,
+      37.25833427972849
+    ]
+  },
+  {
+    "sidoCode": "34",
+    "file": "/data/geojson/korea/sigungu-by-sido/34.json",
+    "featureCount": 16,
+    "bbox": [
+      125.54180470605203,
+      35.97826412396278,
+      127.63974825483817,
+      37.064942676631716
+    ]
+  },
+  {
+    "sidoCode": "35",
+    "file": "/data/geojson/korea/sigungu-by-sido/35.json",
+    "featureCount": 15,
+    "bbox": [
+      125.96659986652769,
+      35.29923259882334,
+      127.9113673784293,
+      36.15657043462714
+    ]
+  },
+  {
+    "sidoCode": "36",
+    "file": "/data/geojson/korea/sigungu-by-sido/36.json",
+    "featureCount": 22,
+    "bbox": [
+      125.08147323010118,
+      33.96857285425114,
+      127.90517516446421,
+      35.48691382643168
+    ]
+  },
+  {
+    "sidoCode": "37",
+    "file": "/data/geojson/korea/sigungu-by-sido/37.json",
+    "featureCount": 24,
+    "bbox": [
+      127.79615213411726,
+      35.56688816131717,
+      131.8714666660104,
+      37.549138092748606
+    ]
+  },
+  {
+    "sidoCode": "38",
+    "file": "/data/geojson/korea/sigungu-by-sido/38.json",
+    "featureCount": 22,
+    "bbox": [
+      127.57607074605717,
+      34.53467694665487,
+      129.21907199554443,
+      35.909944060999884
+    ]
+  },
+  {
+    "sidoCode": "39",
+    "file": "/data/geojson/korea/sigungu-by-sido/39.json",
+    "featureCount": 2,
+    "bbox": [
+      126.14369392738361,
+      33.11235576062581,
+      126.97265693982743,
+      34.01287235113741
+    ]
+  }
+]
