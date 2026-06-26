@@ -2,8 +2,9 @@
  * zoomController.js
  *
  * 지도 줌 레벨에 따라
- *  - 광역시
- *  - 구·군
+ *  - 전국
+ *  - 시도
+ *  - 시군구
  *  - 읍·면·동
  *  - 나무 마커
  * 를 자동으로 토글하는 컨트롤러
@@ -22,25 +23,18 @@ import {
 } from "./loadTreeMarkers";
 
 import {
-  showUlsanSubmunicipalitiesPolygons,
-  hideUlsanSubmunicipalitiesPolygons,
-  showUlsanSubmunicipalitiesLabels,
-  hideUlsanSubmunicipalitiesLabels,
-} from "./loadUlsanSubmunicipalities";
-
-import {
-  showUlsanDistrictPolygons,
-  hideUlsanDistrictPolygons,
-  showUlsanDistrictLabels,
-  hideUlsanDistrictLabels,
-} from "./loadUlsanDistricts";
-
-import {
-  showUlsanMetropolitanPolygons,
-  hideUlsanMetropolitanPolygons,
-  showUlsanMetropolitanLabels,
-  hideUlsanMetropolitanLabels,
-} from "./loadUlsanMetropolitanCity";
+  hideAllKoreaAdministrativeLayers,
+  ensureKoreaAdministrativeLevel,
+  KOREA_ADMIN_LEVEL,
+  showKoreaCountryLabels,
+  showKoreaCountryPolygons,
+  showKoreaEmdLabels,
+  showKoreaEmdPolygons,
+  showKoreaSidoLabels,
+  showKoreaSidoPolygons,
+  showKoreaSigunguLabels,
+  showKoreaSigunguPolygons,
+} from "./loadKoreaAdministrativePolygons";
 
 
 /* =========================================================
@@ -51,21 +45,28 @@ import {
  * 각 행정단위가 나타나는 최소 줌 레벨
  *
  * 예시
- * 0~9  : 광역시
- * 10~12 : 구·군
- * 13~14 : 읍·면·동
+ * 5~5.99  : 전국
+ * 6~7.99  : 시도
+ * 8~10.99 : 시군구
+ * 11~14.99 : 읍·면·동
  * 15+ : 개별 나무 마커
  */
 export const ZOOM_LEVEL = {
 
-  // 광역시 표시 기준
-  METROPOLITAN: 10,
+  // 전국 표시 기준
+  COUNTRY: 5,
 
-  // 구·군 표시 기준
-  DISTRICT: 11,
+  // 시도 표시 기준
+  SIDO: 6,
+
+  // 시군구 표시 기준
+  SIGUNGU: 8,
 
   // 읍·면·동 표시 기준
-  SUBMUNICIPALITY: 13,
+  EMD: 11,
+
+  // 읍·면·동 라벨 표시 기준
+  EMD_LABEL: 13,
 
   // 개별 나무 마커 표시 기준
   MARKER: 15,
@@ -87,7 +88,7 @@ export function setupZoomController(map) {
   /**
    * 현재 줌 레벨에 따라 레이어 상태 업데이트
    */
-  const update = () => {
+  const update = async () => {
 
     const zoom = map.getZoom();
 
@@ -99,15 +100,7 @@ export function setupZoomController(map) {
       // 🌳 나무 마커 표시
       showTreeMarkers(map);
 
-      // 다른 레이어 숨김
-      hideUlsanSubmunicipalitiesPolygons(map);
-      hideUlsanSubmunicipalitiesLabels(map);
-
-      hideUlsanDistrictPolygons(map);
-      hideUlsanDistrictLabels(map);
-
-      hideUlsanMetropolitanPolygons(map);
-      hideUlsanMetropolitanLabels(map);
+      hideAllKoreaAdministrativeLayers(map);
 
       return;
     }
@@ -120,35 +113,15 @@ export function setupZoomController(map) {
     /* =====================================================
        2️⃣ 읍·면·동 단계
        ===================================================== */
-    if (zoom >= ZOOM_LEVEL.SUBMUNICIPALITY) {
+    if (zoom >= ZOOM_LEVEL.EMD) {
 
-      showUlsanSubmunicipalitiesPolygons(map);
-      showUlsanSubmunicipalitiesLabels(map);
+      await ensureKoreaAdministrativeLevel(map, KOREA_ADMIN_LEVEL.EMD);
+      hideAllKoreaAdministrativeLayers(map);
+      showKoreaEmdPolygons(map);
 
-      hideUlsanDistrictPolygons(map);
-      hideUlsanDistrictLabels(map);
-
-      hideUlsanMetropolitanPolygons(map);
-      hideUlsanMetropolitanLabels(map);
-
-      return;
-    }
-
-
-
-    /* =====================================================
-       3️⃣ 구·군 단계
-       ===================================================== */
-    if (zoom >= ZOOM_LEVEL.DISTRICT) {
-
-      showUlsanDistrictPolygons(map);
-      showUlsanDistrictLabels(map);
-
-      hideUlsanSubmunicipalitiesPolygons(map);
-      hideUlsanSubmunicipalitiesLabels(map);
-
-      hideUlsanMetropolitanPolygons(map);
-      hideUlsanMetropolitanLabels(map);
+      if (zoom >= ZOOM_LEVEL.EMD_LABEL) {
+        showKoreaEmdLabels(map);
+      }
 
       return;
     }
@@ -156,17 +129,39 @@ export function setupZoomController(map) {
 
 
     /* =====================================================
-       4️⃣ 광역시 단계
+       3️⃣ 시군구 단계
+       ===================================================== */
+    if (zoom >= ZOOM_LEVEL.SIGUNGU) {
+
+      await ensureKoreaAdministrativeLevel(map, KOREA_ADMIN_LEVEL.SIGUNGU);
+      hideAllKoreaAdministrativeLayers(map);
+      showKoreaSigunguPolygons(map);
+      showKoreaSigunguLabels(map);
+      return;
+    }
+
+
+
+    /* =====================================================
+       4️⃣ 시도 단계
+       ===================================================== */
+    if (zoom >= ZOOM_LEVEL.SIDO) {
+      await ensureKoreaAdministrativeLevel(map, KOREA_ADMIN_LEVEL.SIDO);
+      hideAllKoreaAdministrativeLayers(map);
+      showKoreaSidoPolygons(map);
+      showKoreaSidoLabels(map);
+      return;
+    }
+
+
+    /* =====================================================
+       5️⃣ 전국 단계
        ===================================================== */
 
-    showUlsanMetropolitanPolygons(map);
-    showUlsanMetropolitanLabels(map);
-
-    hideUlsanDistrictPolygons(map);
-    hideUlsanDistrictLabels(map);
-
-    hideUlsanSubmunicipalitiesPolygons(map);
-    hideUlsanSubmunicipalitiesLabels(map);
+    await ensureKoreaAdministrativeLevel(map, KOREA_ADMIN_LEVEL.COUNTRY);
+    hideAllKoreaAdministrativeLayers(map);
+    showKoreaCountryPolygons(map);
+    showKoreaCountryLabels(map);
   };
 
 
@@ -182,4 +177,5 @@ export function setupZoomController(map) {
      ===================================================== */
 
   map.on("zoomend", update);
+  map.on("moveend", update);
 }

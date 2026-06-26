@@ -1,0 +1,3502 @@
+[
+  {
+    "chunkId": "11010",
+    "sidoCode": "11",
+    "sigunguCode": "11010",
+    "file": "/data/geojson/korea/emd-by-sigungu/11010.json",
+    "featureCount": 17,
+    "bbox": [
+      126.948898,
+      37.56582,
+      127.023362,
+      37.632375
+    ],
+    "bytes": 34697
+  },
+  {
+    "chunkId": "11020",
+    "sidoCode": "11",
+    "sigunguCode": "11020",
+    "file": "/data/geojson/korea/emd-by-sigungu/11020.json",
+    "featureCount": 15,
+    "bbox": [
+      126.961574,
+      37.543857,
+      127.026767,
+      37.571961
+    ],
+    "bytes": 26319
+  },
+  {
+    "chunkId": "11030",
+    "sidoCode": "11",
+    "sigunguCode": "11030",
+    "file": "/data/geojson/korea/emd-by-sigungu/11030.json",
+    "featureCount": 16,
+    "bbox": [
+      126.94459,
+      37.50652,
+      127.017531,
+      37.555662
+    ],
+    "bytes": 35953
+  },
+  {
+    "chunkId": "11040",
+    "sidoCode": "11",
+    "sigunguCode": "11040",
+    "file": "/data/geojson/korea/emd-by-sigungu/11040.json",
+    "featureCount": 17,
+    "bbox": [
+      127.008153,
+      37.528331,
+      127.073736,
+      37.572994
+    ],
+    "bytes": 40172
+  },
+  {
+    "chunkId": "11050",
+    "sidoCode": "11",
+    "sigunguCode": "11050",
+    "file": "/data/geojson/korea/emd-by-sigungu/11050.json",
+    "featureCount": 15,
+    "bbox": [
+      127.056222,
+      37.522514,
+      127.115226,
+      37.573763
+    ],
+    "bytes": 21494
+  },
+  {
+    "chunkId": "11060",
+    "sidoCode": "11",
+    "sigunguCode": "11060",
+    "file": "/data/geojson/korea/emd-by-sigungu/11060.json",
+    "featureCount": 14,
+    "bbox": [
+      127.023138,
+      37.55996,
+      127.078202,
+      37.609019
+    ],
+    "bytes": 30414
+  },
+  {
+    "chunkId": "11070",
+    "sidoCode": "11",
+    "sigunguCode": "11070",
+    "file": "/data/geojson/korea/emd-by-sigungu/11070.json",
+    "featureCount": 16,
+    "bbox": [
+      127.069424,
+      37.569698,
+      127.118096,
+      37.620692
+    ],
+    "bytes": 30557
+  },
+  {
+    "chunkId": "11080",
+    "sidoCode": "11",
+    "sigunguCode": "11080",
+    "file": "/data/geojson/korea/emd-by-sigungu/11080.json",
+    "featureCount": 20,
+    "bbox": [
+      126.974681,
+      37.577517,
+      127.071709,
+      37.636438
+    ],
+    "bytes": 44015
+  },
+  {
+    "chunkId": "11090",
+    "sidoCode": "11",
+    "sigunguCode": "11090",
+    "file": "/data/geojson/korea/emd-by-sigungu/11090.json",
+    "featureCount": 13,
+    "bbox": [
+      126.979658,
+      37.609073,
+      127.04974,
+      37.685074
+    ],
+    "bytes": 30271
+  },
+  {
+    "chunkId": "11100",
+    "sidoCode": "11",
+    "sigunguCode": "11100",
+    "file": "/data/geojson/korea/emd-by-sigungu/11100.json",
+    "featureCount": 14,
+    "bbox": [
+      127.008293,
+      37.630511,
+      127.055875,
+      37.701455
+    ],
+    "bytes": 26723
+  },
+  {
+    "chunkId": "11110",
+    "sidoCode": "11",
+    "sigunguCode": "11110",
+    "file": "/data/geojson/korea/emd-by-sigungu/11110.json",
+    "featureCount": 19,
+    "bbox": [
+      127.041658,
+      37.614269,
+      127.112483,
+      37.696137
+    ],
+    "bytes": 42051
+  },
+  {
+    "chunkId": "11120",
+    "sidoCode": "11",
+    "sigunguCode": "11120",
+    "file": "/data/geojson/korea/emd-by-sigungu/11120.json",
+    "featureCount": 16,
+    "bbox": [
+      126.882056,
+      37.576007,
+      126.963329,
+      37.659185
+    ],
+    "bytes": 36402
+  },
+  {
+    "chunkId": "11130",
+    "sidoCode": "11",
+    "sigunguCode": "11130",
+    "file": "/data/geojson/korea/emd-by-sigungu/11130.json",
+    "featureCount": 14,
+    "bbox": [
+      126.901891,
+      37.555101,
+      126.969463,
+      37.610623
+    ],
+    "bytes": 29684
+  },
+  {
+    "chunkId": "11140",
+    "sidoCode": "11",
+    "sigunguCode": "11140",
+    "file": "/data/geojson/korea/emd-by-sigungu/11140.json",
+    "featureCount": 16,
+    "bbox": [
+      126.853629,
+      37.533786,
+      126.963495,
+      37.590792
+    ],
+    "bytes": 30973
+  },
+  {
+    "chunkId": "11150",
+    "sidoCode": "11",
+    "sigunguCode": "11150",
+    "file": "/data/geojson/korea/emd-by-sigungu/11150.json",
+    "featureCount": 18,
+    "bbox": [
+      126.821804,
+      37.502816,
+      126.890514,
+      37.551241
+    ],
+    "bytes": 33641
+  },
+  {
+    "chunkId": "11160",
+    "sidoCode": "11",
+    "sigunguCode": "11160",
+    "file": "/data/geojson/korea/emd-by-sigungu/11160.json",
+    "featureCount": 20,
+    "bbox": [
+      126.764484,
+      37.526487,
+      126.880664,
+      37.605033
+    ],
+    "bytes": 45828
+  },
+  {
+    "chunkId": "11170",
+    "sidoCode": "11",
+    "sigunguCode": "11170",
+    "file": "/data/geojson/korea/emd-by-sigungu/11170.json",
+    "featureCount": 15,
+    "bbox": [
+      126.813012,
+      37.473238,
+      126.903197,
+      37.517926
+    ],
+    "bytes": 41501
+  },
+  {
+    "chunkId": "11180",
+    "sidoCode": "11",
+    "sigunguCode": "11180",
+    "file": "/data/geojson/korea/emd-by-sigungu/11180.json",
+    "featureCount": 10,
+    "bbox": [
+      126.871763,
+      37.433597,
+      126.92851,
+      37.486319
+    ],
+    "bytes": 23690
+  },
+  {
+    "chunkId": "11190",
+    "sidoCode": "11",
+    "sigunguCode": "11190",
+    "file": "/data/geojson/korea/emd-by-sigungu/11190.json",
+    "featureCount": 18,
+    "bbox": [
+      126.878033,
+      37.485002,
+      126.949887,
+      37.55627
+    ],
+    "bytes": 42699
+  },
+  {
+    "chunkId": "11200",
+    "sidoCode": "11",
+    "sigunguCode": "11200",
+    "file": "/data/geojson/korea/emd-by-sigungu/11200.json",
+    "featureCount": 15,
+    "bbox": [
+      126.903199,
+      37.475376,
+      126.985387,
+      37.517614
+    ],
+    "bytes": 29690
+  },
+  {
+    "chunkId": "11210",
+    "sidoCode": "11",
+    "sigunguCode": "11210",
+    "file": "/data/geojson/korea/emd-by-sigungu/11210.json",
+    "featureCount": 21,
+    "bbox": [
+      126.898943,
+      37.435712,
+      126.988636,
+      37.495078
+    ],
+    "bytes": 44285
+  },
+  {
+    "chunkId": "11220",
+    "sidoCode": "11",
+    "sigunguCode": "11220",
+    "file": "/data/geojson/korea/emd-by-sigungu/11220.json",
+    "featureCount": 18,
+    "bbox": [
+      126.980397,
+      37.428809,
+      127.095718,
+      37.525596
+    ],
+    "bytes": 40609
+  },
+  {
+    "chunkId": "11230",
+    "sidoCode": "11",
+    "sigunguCode": "11230",
+    "file": "/data/geojson/korea/emd-by-sigungu/11230.json",
+    "featureCount": 22,
+    "bbox": [
+      127.008577,
+      37.456371,
+      127.124207,
+      37.53583
+    ],
+    "bytes": 40318
+  },
+  {
+    "chunkId": "11240",
+    "sidoCode": "11",
+    "sigunguCode": "11240",
+    "file": "/data/geojson/korea/emd-by-sigungu/11240.json",
+    "featureCount": 27,
+    "bbox": [
+      127.067479,
+      37.466517,
+      127.161431,
+      37.543171
+    ],
+    "bytes": 56819
+  },
+  {
+    "chunkId": "11250",
+    "sidoCode": "11",
+    "sigunguCode": "11250",
+    "file": "/data/geojson/korea/emd-by-sigungu/11250.json",
+    "featureCount": 18,
+    "bbox": [
+      127.10924,
+      37.516835,
+      127.183539,
+      37.5812
+    ],
+    "bytes": 33122
+  },
+  {
+    "chunkId": "21010",
+    "sidoCode": "21",
+    "sigunguCode": "21010",
+    "file": "/data/geojson/korea/emd-by-sigungu/21010.json",
+    "featureCount": 9,
+    "bbox": [
+      129.021191,
+      35.095686,
+      129.04682,
+      35.116431
+    ],
+    "bytes": 11812
+  },
+  {
+    "chunkId": "21020",
+    "sidoCode": "21",
+    "sigunguCode": "21020",
+    "file": "/data/geojson/korea/emd-by-sigungu/21020.json",
+    "featureCount": 13,
+    "bbox": [
+      128.996033,
+      35.047366,
+      129.028103,
+      35.140992
+    ],
+    "bytes": 26752
+  },
+  {
+    "chunkId": "21030",
+    "sidoCode": "21",
+    "sigunguCode": "21030",
+    "file": "/data/geojson/korea/emd-by-sigungu/21030.json",
+    "featureCount": 12,
+    "bbox": [
+      129.024303,
+      35.107608,
+      129.066118,
+      35.146176
+    ],
+    "bytes": 22499
+  },
+  {
+    "chunkId": "21040",
+    "sidoCode": "21",
+    "sigunguCode": "21040",
+    "file": "/data/geojson/korea/emd-by-sigungu/21040.json",
+    "featureCount": 11,
+    "bbox": [
+      129.031118,
+      35.049269,
+      129.105247,
+      35.104007
+    ],
+    "bytes": 30932
+  },
+  {
+    "chunkId": "21050",
+    "sidoCode": "21",
+    "sigunguCode": "21050",
+    "file": "/data/geojson/korea/emd-by-sigungu/21050.json",
+    "featureCount": 20,
+    "bbox": [
+      129.010572,
+      35.135661,
+      129.082844,
+      35.20008
+    ],
+    "bytes": 43746
+  },
+  {
+    "chunkId": "21060",
+    "sidoCode": "21",
+    "sigunguCode": "21060",
+    "file": "/data/geojson/korea/emd-by-sigungu/21060.json",
+    "featureCount": 13,
+    "bbox": [
+      129.044126,
+      35.183654,
+      129.116039,
+      35.226192
+    ],
+    "bytes": 25810
+  },
+  {
+    "chunkId": "21070",
+    "sidoCode": "21",
+    "sigunguCode": "21070",
+    "file": "/data/geojson/korea/emd-by-sigungu/21070.json",
+    "featureCount": 17,
+    "bbox": [
+      129.063011,
+      35.084413,
+      129.128979,
+      35.161313
+    ],
+    "bytes": 45748
+  },
+  {
+    "chunkId": "21080",
+    "sidoCode": "21",
+    "sigunguCode": "21080",
+    "file": "/data/geojson/korea/emd-by-sigungu/21080.json",
+    "featureCount": 13,
+    "bbox": [
+      128.987737,
+      35.18747,
+      129.061774,
+      35.276895
+    ],
+    "bytes": 34723
+  },
+  {
+    "chunkId": "21090",
+    "sidoCode": "21",
+    "sigunguCode": "21090",
+    "file": "/data/geojson/korea/emd-by-sigungu/21090.json",
+    "featureCount": 18,
+    "bbox": [
+      129.110241,
+      35.151367,
+      129.208419,
+      35.250942
+    ],
+    "bytes": 66470
+  },
+  {
+    "chunkId": "21100",
+    "sidoCode": "21",
+    "sigunguCode": "21100",
+    "file": "/data/geojson/korea/emd-by-sigungu/21100.json",
+    "featureCount": 16,
+    "bbox": [
+      128.924225,
+      34.978253,
+      129.014367,
+      35.136833
+    ],
+    "bytes": 77784
+  },
+  {
+    "chunkId": "21110",
+    "sidoCode": "21",
+    "sigunguCode": "21110",
+    "file": "/data/geojson/korea/emd-by-sigungu/21110.json",
+    "featureCount": 17,
+    "bbox": [
+      129.036558,
+      35.210097,
+      129.144599,
+      35.30653
+    ],
+    "bytes": 49929
+  },
+  {
+    "chunkId": "21120",
+    "sidoCode": "21",
+    "sigunguCode": "21120",
+    "file": "/data/geojson/korea/emd-by-sigungu/21120.json",
+    "featureCount": 8,
+    "bbox": [
+      128.765378,
+      34.988619,
+      128.998224,
+      35.236081
+    ],
+    "bytes": 135038
+  },
+  {
+    "chunkId": "21130",
+    "sidoCode": "21",
+    "sigunguCode": "21130",
+    "file": "/data/geojson/korea/emd-by-sigungu/21130.json",
+    "featureCount": 12,
+    "bbox": [
+      129.047325,
+      35.158174,
+      129.115188,
+      35.199458
+    ],
+    "bytes": 22784
+  },
+  {
+    "chunkId": "21140",
+    "sidoCode": "21",
+    "sigunguCode": "21140",
+    "file": "/data/geojson/korea/emd-by-sigungu/21140.json",
+    "featureCount": 10,
+    "bbox": [
+      129.091576,
+      35.135762,
+      129.135331,
+      35.186257
+    ],
+    "bytes": 19832
+  },
+  {
+    "chunkId": "21150",
+    "sidoCode": "21",
+    "sigunguCode": "21150",
+    "file": "/data/geojson/korea/emd-by-sigungu/21150.json",
+    "featureCount": 12,
+    "bbox": [
+      128.957447,
+      35.116905,
+      129.021068,
+      35.201461
+    ],
+    "bytes": 31363
+  },
+  {
+    "chunkId": "21310",
+    "sidoCode": "21",
+    "sigunguCode": "21310",
+    "file": "/data/geojson/korea/emd-by-sigungu/21310.json",
+    "featureCount": 5,
+    "bbox": [
+      129.108562,
+      35.181981,
+      129.305753,
+      35.389037
+    ],
+    "bytes": 81988
+  },
+  {
+    "chunkId": "22010",
+    "sidoCode": "22",
+    "sigunguCode": "22010",
+    "file": "/data/geojson/korea/emd-by-sigungu/22010.json",
+    "featureCount": 12,
+    "bbox": [
+      128.573773,
+      35.854906,
+      128.614664,
+      35.879578
+    ],
+    "bytes": 15008
+  },
+  {
+    "chunkId": "22020",
+    "sidoCode": "22",
+    "sigunguCode": "22020",
+    "file": "/data/geojson/korea/emd-by-sigungu/22020.json",
+    "featureCount": 20,
+    "bbox": [
+      128.603378,
+      35.851161,
+      128.761332,
+      36.016165
+    ],
+    "bytes": 71430
+  },
+  {
+    "chunkId": "22030",
+    "sidoCode": "22",
+    "sigunguCode": "22030",
+    "file": "/data/geojson/korea/emd-by-sigungu/22030.json",
+    "featureCount": 17,
+    "bbox": [
+      128.516347,
+      35.854304,
+      128.581845,
+      35.897218
+    ],
+    "bytes": 22074
+  },
+  {
+    "chunkId": "22040",
+    "sidoCode": "22",
+    "sigunguCode": "22040",
+    "file": "/data/geojson/korea/emd-by-sigungu/22040.json",
+    "featureCount": 13,
+    "bbox": [
+      128.5555,
+      35.807193,
+      128.608835,
+      35.860067
+    ],
+    "bytes": 24594
+  },
+  {
+    "chunkId": "22050",
+    "sidoCode": "22",
+    "sigunguCode": "22050",
+    "file": "/data/geojson/korea/emd-by-sigungu/22050.json",
+    "featureCount": 23,
+    "bbox": [
+      128.504825,
+      35.873777,
+      128.632601,
+      35.987823
+    ],
+    "bytes": 67318
+  },
+  {
+    "chunkId": "22060",
+    "sidoCode": "22",
+    "sigunguCode": "22060",
+    "file": "/data/geojson/korea/emd-by-sigungu/22060.json",
+    "featureCount": 23,
+    "bbox": [
+      128.591485,
+      35.790131,
+      128.726965,
+      35.878331
+    ],
+    "bytes": 69077
+  },
+  {
+    "chunkId": "22070",
+    "sidoCode": "22",
+    "sigunguCode": "22070",
+    "file": "/data/geojson/korea/emd-by-sigungu/22070.json",
+    "featureCount": 22,
+    "bbox": [
+      128.468695,
+      35.772942,
+      128.587802,
+      35.869568
+    ],
+    "bytes": 50651
+  },
+  {
+    "chunkId": "22310",
+    "sidoCode": "22",
+    "sigunguCode": "22310",
+    "file": "/data/geojson/korea/emd-by-sigungu/22310.json",
+    "featureCount": 9,
+    "bbox": [
+      128.351476,
+      35.60654,
+      128.695486,
+      35.943149
+    ],
+    "bytes": 82971
+  },
+  {
+    "chunkId": "23010",
+    "sidoCode": "23",
+    "sigunguCode": "23010",
+    "file": "/data/geojson/korea/emd-by-sigungu/23010.json",
+    "featureCount": 12,
+    "bbox": [
+      126.35527,
+      37.356743,
+      126.643402,
+      37.543604
+    ],
+    "bytes": 119964
+  },
+  {
+    "chunkId": "23020",
+    "sidoCode": "23",
+    "sigunguCode": "23020",
+    "file": "/data/geojson/korea/emd-by-sigungu/23020.json",
+    "featureCount": 11,
+    "bbox": [
+      126.609845,
+      37.468296,
+      126.674432,
+      37.495896
+    ],
+    "bytes": 15635
+  },
+  {
+    "chunkId": "23030",
+    "sidoCode": "23",
+    "sigunguCode": "23030",
+    "file": "/data/geojson/korea/emd-by-sigungu/23030.json",
+    "featureCount": 21,
+    "bbox": [
+      126.628872,
+      37.42995,
+      126.702941,
+      37.484033
+    ],
+    "bytes": 38071
+  },
+  {
+    "chunkId": "23040",
+    "sidoCode": "23",
+    "sigunguCode": "23040",
+    "file": "/data/geojson/korea/emd-by-sigungu/23040.json",
+    "featureCount": 13,
+    "bbox": [
+      126.580642,
+      37.337304,
+      126.706655,
+      37.439385
+    ],
+    "bytes": 42516
+  },
+  {
+    "chunkId": "23050",
+    "sidoCode": "23",
+    "sigunguCode": "23050",
+    "file": "/data/geojson/korea/emd-by-sigungu/23050.json",
+    "featureCount": 19,
+    "bbox": [
+      126.666852,
+      37.381111,
+      126.780432,
+      37.479926
+    ],
+    "bytes": 51051
+  },
+  {
+    "chunkId": "23060",
+    "sidoCode": "23",
+    "sigunguCode": "23060",
+    "file": "/data/geojson/korea/emd-by-sigungu/23060.json",
+    "featureCount": 22,
+    "bbox": [
+      126.683251,
+      37.464732,
+      126.767753,
+      37.524079
+    ],
+    "bytes": 38702
+  },
+  {
+    "chunkId": "23070",
+    "sidoCode": "23",
+    "sigunguCode": "23070",
+    "file": "/data/geojson/korea/emd-by-sigungu/23070.json",
+    "featureCount": 12,
+    "bbox": [
+      126.681057,
+      37.523557,
+      126.793695,
+      37.593703
+    ],
+    "bytes": 33466
+  },
+  {
+    "chunkId": "23080",
+    "sidoCode": "23",
+    "sigunguCode": "23080",
+    "file": "/data/geojson/korea/emd-by-sigungu/23080.json",
+    "featureCount": 21,
+    "bbox": [
+      126.555131,
+      37.471593,
+      126.725462,
+      37.638214
+    ],
+    "bytes": 78311
+  },
+  {
+    "chunkId": "23310",
+    "sidoCode": "23",
+    "sigunguCode": "23310",
+    "file": "/data/geojson/korea/emd-by-sigungu/23310.json",
+    "featureCount": 13,
+    "bbox": [
+      125.971598,
+      37.579871,
+      126.543959,
+      37.831556
+    ],
+    "bytes": 135797
+  },
+  {
+    "chunkId": "23320",
+    "sidoCode": "23",
+    "sigunguCode": "23320",
+    "file": "/data/geojson/korea/emd-by-sigungu/23320.json",
+    "featureCount": 7,
+    "bbox": [
+      124.609718,
+      36.92685,
+      126.551687,
+      37.984243
+    ],
+    "bytes": 371212
+  },
+  {
+    "chunkId": "24010",
+    "sidoCode": "24",
+    "sigunguCode": "24010",
+    "file": "/data/geojson/korea/emd-by-sigungu/24010.json",
+    "featureCount": 13,
+    "bbox": [
+      126.907156,
+      35.072665,
+      127.004276,
+      35.165489
+    ],
+    "bytes": 28999
+  },
+  {
+    "chunkId": "24020",
+    "sidoCode": "24",
+    "sigunguCode": "24020",
+    "file": "/data/geojson/korea/emd-by-sigungu/24020.json",
+    "featureCount": 18,
+    "bbox": [
+      126.800627,
+      35.090933,
+      126.909728,
+      35.178485
+    ],
+    "bytes": 47982
+  },
+  {
+    "chunkId": "24030",
+    "sidoCode": "24",
+    "sigunguCode": "24030",
+    "file": "/data/geojson/korea/emd-by-sigungu/24030.json",
+    "featureCount": 16,
+    "bbox": [
+      126.753136,
+      35.05102,
+      126.929591,
+      35.152341
+    ],
+    "bytes": 42774
+  },
+  {
+    "chunkId": "24040",
+    "sidoCode": "24",
+    "sigunguCode": "24040",
+    "file": "/data/geojson/korea/emd-by-sigungu/24040.json",
+    "featureCount": 27,
+    "bbox": [
+      126.834855,
+      35.121107,
+      127.022275,
+      35.258462
+    ],
+    "bytes": 80921
+  },
+  {
+    "chunkId": "24050",
+    "sidoCode": "24",
+    "sigunguCode": "24050",
+    "file": "/data/geojson/korea/emd-by-sigungu/24050.json",
+    "featureCount": 21,
+    "bbox": [
+      126.644978,
+      35.070183,
+      126.860403,
+      35.258704
+    ],
+    "bytes": 123035
+  },
+  {
+    "chunkId": "25010",
+    "sidoCode": "25",
+    "sigunguCode": "25010",
+    "file": "/data/geojson/korea/emd-by-sigungu/25010.json",
+    "featureCount": 16,
+    "bbox": [
+      127.413664,
+      36.194746,
+      127.559679,
+      36.439829
+    ],
+    "bytes": 57782
+  },
+  {
+    "chunkId": "25020",
+    "sidoCode": "25",
+    "sigunguCode": "25020",
+    "file": "/data/geojson/korea/emd-by-sigungu/25020.json",
+    "featureCount": 17,
+    "bbox": [
+      127.367476,
+      36.207434,
+      127.458187,
+      36.349629
+    ],
+    "bytes": 40602
+  },
+  {
+    "chunkId": "25030",
+    "sidoCode": "25",
+    "sigunguCode": "25030",
+    "file": "/data/geojson/korea/emd-by-sigungu/25030.json",
+    "featureCount": 23,
+    "bbox": [
+      127.279423,
+      36.1831,
+      127.404612,
+      36.372015
+    ],
+    "bytes": 58753
+  },
+  {
+    "chunkId": "25040",
+    "sidoCode": "25",
+    "sigunguCode": "25040",
+    "file": "/data/geojson/korea/emd-by-sigungu/25040.json",
+    "featureCount": 11,
+    "bbox": [
+      127.246653,
+      36.264242,
+      127.420271,
+      36.500231
+    ],
+    "bytes": 81300
+  },
+  {
+    "chunkId": "25050",
+    "sidoCode": "25",
+    "sigunguCode": "25050",
+    "file": "/data/geojson/korea/emd-by-sigungu/25050.json",
+    "featureCount": 12,
+    "bbox": [
+      127.389303,
+      36.340932,
+      127.504472,
+      36.477179
+    ],
+    "bytes": 45078
+  },
+  {
+    "chunkId": "26010",
+    "sidoCode": "26",
+    "sigunguCode": "26010",
+    "file": "/data/geojson/korea/emd-by-sigungu/26010.json",
+    "featureCount": 13,
+    "bbox": [
+      129.252584,
+      35.544902,
+      129.35368,
+      35.599112
+    ],
+    "bytes": 54464
+  },
+  {
+    "chunkId": "26020",
+    "sidoCode": "26",
+    "sigunguCode": "26020",
+    "file": "/data/geojson/korea/emd-by-sigungu/26020.json",
+    "featureCount": 14,
+    "bbox": [
+      129.236539,
+      35.454235,
+      129.391105,
+      35.556906
+    ],
+    "bytes": 54632
+  },
+  {
+    "chunkId": "26030",
+    "sidoCode": "26",
+    "sigunguCode": "26030",
+    "file": "/data/geojson/korea/emd-by-sigungu/26030.json",
+    "featureCount": 9,
+    "bbox": [
+      129.387629,
+      35.466461,
+      129.458641,
+      35.571602
+    ],
+    "bytes": 117217
+  },
+  {
+    "chunkId": "26040",
+    "sidoCode": "26",
+    "sigunguCode": "26040",
+    "file": "/data/geojson/korea/emd-by-sigungu/26040.json",
+    "featureCount": 8,
+    "bbox": [
+      129.290322,
+      35.516045,
+      129.46466,
+      35.67944
+    ],
+    "bytes": 111730
+  },
+  {
+    "chunkId": "26310",
+    "sidoCode": "26",
+    "sigunguCode": "26310",
+    "file": "/data/geojson/korea/emd-by-sigungu/26310.json",
+    "featureCount": 12,
+    "bbox": [
+      128.97119,
+      35.328053,
+      129.381187,
+      35.72492
+    ],
+    "bytes": 169564
+  },
+  {
+    "chunkId": "29010",
+    "sidoCode": "29",
+    "sigunguCode": "29010",
+    "file": "/data/geojson/korea/emd-by-sigungu/29010.json",
+    "featureCount": 17,
+    "bbox": [
+      127.12773,
+      36.406758,
+      127.410804,
+      36.733822
+    ],
+    "bytes": 203214
+  },
+  {
+    "chunkId": "31011",
+    "sidoCode": "31",
+    "sigunguCode": "31011",
+    "file": "/data/geojson/korea/emd-by-sigungu/31011.json",
+    "featureCount": 10,
+    "bbox": [
+      126.960805,
+      37.285512,
+      127.039699,
+      37.351045
+    ],
+    "bytes": 33452
+  },
+  {
+    "chunkId": "31012",
+    "sidoCode": "31",
+    "sigunguCode": "31012",
+    "file": "/data/geojson/korea/emd-by-sigungu/31012.json",
+    "featureCount": 12,
+    "bbox": [
+      126.926981,
+      37.224544,
+      127.042171,
+      37.303339
+    ],
+    "bytes": 50396
+  },
+  {
+    "chunkId": "31013",
+    "sidoCode": "31",
+    "sigunguCode": "31013",
+    "file": "/data/geojson/korea/emd-by-sigungu/31013.json",
+    "featureCount": 10,
+    "bbox": [
+      126.977338,
+      37.256521,
+      127.045638,
+      37.293609
+    ],
+    "bytes": 24731
+  },
+  {
+    "chunkId": "31014",
+    "sidoCode": "31",
+    "sigunguCode": "31014",
+    "file": "/data/geojson/korea/emd-by-sigungu/31014.json",
+    "featureCount": 11,
+    "bbox": [
+      127.032391,
+      37.231276,
+      127.089629,
+      37.320995
+    ],
+    "bytes": 36102
+  },
+  {
+    "chunkId": "31021",
+    "sidoCode": "31",
+    "sigunguCode": "31021",
+    "file": "/data/geojson/korea/emd-by-sigungu/31021.json",
+    "featureCount": 17,
+    "bbox": [
+      127.041766,
+      37.397058,
+      127.17693,
+      37.474626
+    ],
+    "bytes": 37084
+  },
+  {
+    "chunkId": "31022",
+    "sidoCode": "31",
+    "sigunguCode": "31022",
+    "file": "/data/geojson/korea/emd-by-sigungu/31022.json",
+    "featureCount": 11,
+    "bbox": [
+      127.116979,
+      37.405224,
+      127.195819,
+      37.474809
+    ],
+    "bytes": 28554
+  },
+  {
+    "chunkId": "31023",
+    "sidoCode": "31",
+    "sigunguCode": "31023",
+    "file": "/data/geojson/korea/emd-by-sigungu/31023.json",
+    "featureCount": 22,
+    "bbox": [
+      127.027726,
+      37.333375,
+      127.177246,
+      37.417045
+    ],
+    "bytes": 79046
+  },
+  {
+    "chunkId": "31030",
+    "sidoCode": "31",
+    "sigunguCode": "31030",
+    "file": "/data/geojson/korea/emd-by-sigungu/31030.json",
+    "featureCount": 14,
+    "bbox": [
+      127.001694,
+      37.685815,
+      127.147256,
+      37.78034
+    ],
+    "bytes": 58426
+  },
+  {
+    "chunkId": "31041",
+    "sidoCode": "31",
+    "sigunguCode": "31041",
+    "file": "/data/geojson/korea/emd-by-sigungu/31041.json",
+    "featureCount": 14,
+    "bbox": [
+      126.870242,
+      37.358773,
+      126.949032,
+      37.450212
+    ],
+    "bytes": 34551
+  },
+  {
+    "chunkId": "31042",
+    "sidoCode": "31",
+    "sigunguCode": "31042",
+    "file": "/data/geojson/korea/emd-by-sigungu/31042.json",
+    "featureCount": 17,
+    "bbox": [
+      126.925299,
+      37.361492,
+      126.982855,
+      37.440787
+    ],
+    "bytes": 32764
+  },
+  {
+    "chunkId": "31050",
+    "sidoCode": "31",
+    "sigunguCode": "31050",
+    "file": "/data/geojson/korea/emd-by-sigungu/31050.json",
+    "featureCount": 36,
+    "bbox": [
+      126.741626,
+      37.458383,
+      126.833601,
+      37.554242
+    ],
+    "bytes": 69285
+  },
+  {
+    "chunkId": "31060",
+    "sidoCode": "31",
+    "sigunguCode": "31060",
+    "file": "/data/geojson/korea/emd-by-sigungu/31060.json",
+    "featureCount": 18,
+    "bbox": [
+      126.826101,
+      37.401524,
+      126.899695,
+      37.494816
+    ],
+    "bytes": 54489
+  },
+  {
+    "chunkId": "31070",
+    "sidoCode": "31",
+    "sigunguCode": "31070",
+    "file": "/data/geojson/korea/emd-by-sigungu/31070.json",
+    "featureCount": 22,
+    "bbox": [
+      126.778852,
+      36.901602,
+      127.154105,
+      37.144596
+    ],
+    "bytes": 161020
+  },
+  {
+    "chunkId": "31080",
+    "sidoCode": "31",
+    "sigunguCode": "31080",
+    "file": "/data/geojson/korea/emd-by-sigungu/31080.json",
+    "featureCount": 8,
+    "bbox": [
+      127.006221,
+      37.860368,
+      127.155022,
+      37.980717
+    ],
+    "bytes": 35280
+  },
+  {
+    "chunkId": "31091",
+    "sidoCode": "31",
+    "sigunguCode": "31091",
+    "file": "/data/geojson/korea/emd-by-sigungu/31091.json",
+    "featureCount": 13,
+    "bbox": [
+      126.81633,
+      37.267485,
+      126.93961,
+      37.377445
+    ],
+    "bytes": 63963
+  },
+  {
+    "chunkId": "31092",
+    "sidoCode": "31",
+    "sigunguCode": "31092",
+    "file": "/data/geojson/korea/emd-by-sigungu/31092.json",
+    "featureCount": 12,
+    "bbox": [
+      126.378991,
+      37.087986,
+      126.843144,
+      37.365906
+    ],
+    "bytes": 113866
+  },
+  {
+    "chunkId": "31101",
+    "sidoCode": "31",
+    "sigunguCode": "31101",
+    "file": "/data/geojson/korea/emd-by-sigungu/31101.json",
+    "featureCount": 19,
+    "bbox": [
+      126.759519,
+      37.571791,
+      126.994129,
+      37.748485
+    ],
+    "bytes": 96607
+  },
+  {
+    "chunkId": "31103",
+    "sidoCode": "31",
+    "sigunguCode": "31103",
+    "file": "/data/geojson/korea/emd-by-sigungu/31103.json",
+    "featureCount": 11,
+    "bbox": [
+      126.73247,
+      37.625623,
+      126.85607,
+      37.736605
+    ],
+    "bytes": 42437
+  },
+  {
+    "chunkId": "31104",
+    "sidoCode": "31",
+    "sigunguCode": "31104",
+    "file": "/data/geojson/korea/emd-by-sigungu/31104.json",
+    "featureCount": 9,
+    "bbox": [
+      126.670356,
+      37.647518,
+      126.781826,
+      37.707167
+    ],
+    "bytes": 27961
+  },
+  {
+    "chunkId": "31110",
+    "sidoCode": "31",
+    "sigunguCode": "31110",
+    "file": "/data/geojson/korea/emd-by-sigungu/31110.json",
+    "featureCount": 6,
+    "bbox": [
+      126.960909,
+      37.400685,
+      127.047369,
+      37.46772
+    ],
+    "bytes": 19842
+  },
+  {
+    "chunkId": "31120",
+    "sidoCode": "31",
+    "sigunguCode": "31120",
+    "file": "/data/geojson/korea/emd-by-sigungu/31120.json",
+    "featureCount": 8,
+    "bbox": [
+      127.100888,
+      37.556335,
+      127.170598,
+      37.646081
+    ],
+    "bytes": 24140
+  },
+  {
+    "chunkId": "31130",
+    "sidoCode": "31",
+    "sigunguCode": "31130",
+    "file": "/data/geojson/korea/emd-by-sigungu/31130.json",
+    "featureCount": 16,
+    "bbox": [
+      127.080233,
+      37.505499,
+      127.380986,
+      37.780526
+    ],
+    "bytes": 112049
+  },
+  {
+    "chunkId": "31140",
+    "sidoCode": "31",
+    "sigunguCode": "31140",
+    "file": "/data/geojson/korea/emd-by-sigungu/31140.json",
+    "featureCount": 6,
+    "bbox": [
+      126.994914,
+      37.125323,
+      127.103038,
+      37.200552
+    ],
+    "bytes": 29031
+  },
+  {
+    "chunkId": "31150",
+    "sidoCode": "31",
+    "sigunguCode": "31150",
+    "file": "/data/geojson/korea/emd-by-sigungu/31150.json",
+    "featureCount": 17,
+    "bbox": [
+      126.614404,
+      37.308273,
+      126.881644,
+      37.472393
+    ],
+    "bytes": 87468
+  },
+  {
+    "chunkId": "31160",
+    "sidoCode": "31",
+    "sigunguCode": "31160",
+    "file": "/data/geojson/korea/emd-by-sigungu/31160.json",
+    "featureCount": 11,
+    "bbox": [
+      126.872888,
+      37.305054,
+      126.962061,
+      37.378656
+    ],
+    "bytes": 34290
+  },
+  {
+    "chunkId": "31170",
+    "sidoCode": "31",
+    "sigunguCode": "31170",
+    "file": "/data/geojson/korea/emd-by-sigungu/31170.json",
+    "featureCount": 6,
+    "bbox": [
+      126.929312,
+      37.300321,
+      127.047113,
+      37.415539
+    ],
+    "bytes": 28051
+  },
+  {
+    "chunkId": "31180",
+    "sidoCode": "31",
+    "sigunguCode": "31180",
+    "file": "/data/geojson/korea/emd-by-sigungu/31180.json",
+    "featureCount": 13,
+    "bbox": [
+      127.139966,
+      37.468771,
+      127.285701,
+      37.591769
+    ],
+    "bytes": 61716
+  },
+  {
+    "chunkId": "31191",
+    "sidoCode": "31",
+    "sigunguCode": "31191",
+    "file": "/data/geojson/korea/emd-by-sigungu/31191.json",
+    "featureCount": 11,
+    "bbox": [
+      127.109166,
+      37.083648,
+      127.427754,
+      37.360096
+    ],
+    "bytes": 107829
+  },
+  {
+    "chunkId": "31192",
+    "sidoCode": "31",
+    "sigunguCode": "31192",
+    "file": "/data/geojson/korea/emd-by-sigungu/31192.json",
+    "featureCount": 11,
+    "bbox": [
+      127.064725,
+      37.215533,
+      127.177128,
+      37.324711
+    ],
+    "bytes": 51566
+  },
+  {
+    "chunkId": "31193",
+    "sidoCode": "31",
+    "sigunguCode": "31193",
+    "file": "/data/geojson/korea/emd-by-sigungu/31193.json",
+    "featureCount": 9,
+    "bbox": [
+      127.016486,
+      37.293282,
+      127.142444,
+      37.372127
+    ],
+    "bytes": 34063
+  },
+  {
+    "chunkId": "31200",
+    "sidoCode": "31",
+    "sigunguCode": "31200",
+    "file": "/data/geojson/korea/emd-by-sigungu/31200.json",
+    "featureCount": 20,
+    "bbox": [
+      126.659318,
+      37.688606,
+      127.017107,
+      38.010591
+    ],
+    "bytes": 186976
+  },
+  {
+    "chunkId": "31210",
+    "sidoCode": "31",
+    "sigunguCode": "31210",
+    "file": "/data/geojson/korea/emd-by-sigungu/31210.json",
+    "featureCount": 14,
+    "bbox": [
+      127.330031,
+      37.041247,
+      127.637777,
+      37.361697
+    ],
+    "bytes": 124350
+  },
+  {
+    "chunkId": "31220",
+    "sidoCode": "31",
+    "sigunguCode": "31220",
+    "file": "/data/geojson/korea/emd-by-sigungu/31220.json",
+    "featureCount": 15,
+    "bbox": [
+      127.102016,
+      36.893775,
+      127.516591,
+      37.155726
+    ],
+    "bytes": 147372
+  },
+  {
+    "chunkId": "31230",
+    "sidoCode": "31",
+    "sigunguCode": "31230",
+    "file": "/data/geojson/korea/emd-by-sigungu/31230.json",
+    "featureCount": 13,
+    "bbox": [
+      126.51705,
+      37.579714,
+      126.802581,
+      37.790098
+    ],
+    "bytes": 92099
+  },
+  {
+    "chunkId": "31240",
+    "sidoCode": "31",
+    "sigunguCode": "31240",
+    "file": "/data/geojson/korea/emd-by-sigungu/31240.json",
+    "featureCount": 26,
+    "bbox": [
+      126.535542,
+      37.013379,
+      127.16093,
+      37.293769
+    ],
+    "bytes": 295265
+  },
+  {
+    "chunkId": "31250",
+    "sidoCode": "31",
+    "sigunguCode": "31250",
+    "file": "/data/geojson/korea/emd-by-sigungu/31250.json",
+    "featureCount": 10,
+    "bbox": [
+      127.132597,
+      37.265018,
+      127.44586,
+      37.535865
+    ],
+    "bytes": 99898
+  },
+  {
+    "chunkId": "31260",
+    "sidoCode": "31",
+    "sigunguCode": "31260",
+    "file": "/data/geojson/korea/emd-by-sigungu/31260.json",
+    "featureCount": 11,
+    "bbox": [
+      126.901954,
+      37.668685,
+      127.122193,
+      37.942119
+    ],
+    "bytes": 89096
+  },
+  {
+    "chunkId": "31270",
+    "sidoCode": "31",
+    "sigunguCode": "31270",
+    "file": "/data/geojson/korea/emd-by-sigungu/31270.json",
+    "featureCount": 14,
+    "bbox": [
+      127.089796,
+      37.746929,
+      127.447076,
+      38.188227
+    ],
+    "bytes": 162728
+  },
+  {
+    "chunkId": "31280",
+    "sidoCode": "31",
+    "sigunguCode": "31280",
+    "file": "/data/geojson/korea/emd-by-sigungu/31280.json",
+    "featureCount": 12,
+    "bbox": [
+      127.398219,
+      37.135056,
+      127.768412,
+      37.440426
+    ],
+    "bytes": 122527
+  },
+  {
+    "chunkId": "31350",
+    "sidoCode": "31",
+    "sigunguCode": "31350",
+    "file": "/data/geojson/korea/emd-by-sigungu/31350.json",
+    "featureCount": 10,
+    "bbox": [
+      126.786338,
+      37.92823,
+      127.192156,
+      38.282261
+    ],
+    "bytes": 138939
+  },
+  {
+    "chunkId": "31370",
+    "sidoCode": "31",
+    "sigunguCode": "31370",
+    "file": "/data/geojson/korea/emd-by-sigungu/31370.json",
+    "featureCount": 6,
+    "bbox": [
+      127.266914,
+      37.571147,
+      127.617141,
+      38.051214
+    ],
+    "bytes": 91102
+  },
+  {
+    "chunkId": "31380",
+    "sidoCode": "31",
+    "sigunguCode": "31380",
+    "file": "/data/geojson/korea/emd-by-sigungu/31380.json",
+    "featureCount": 12,
+    "bbox": [
+      127.305923,
+      37.367013,
+      127.848113,
+      37.670792
+    ],
+    "bytes": 133255
+  },
+  {
+    "chunkId": "32010",
+    "sidoCode": "32",
+    "sigunguCode": "32010",
+    "file": "/data/geojson/korea/emd-by-sigungu/32010.json",
+    "featureCount": 25,
+    "bbox": [
+      127.506148,
+      37.675645,
+      128.029608,
+      38.085025
+    ],
+    "bytes": 155300
+  },
+  {
+    "chunkId": "32020",
+    "sidoCode": "32",
+    "sigunguCode": "32020",
+    "file": "/data/geojson/korea/emd-by-sigungu/32020.json",
+    "featureCount": 25,
+    "bbox": [
+      127.744101,
+      37.143408,
+      128.217097,
+      37.506907
+    ],
+    "bytes": 185932
+  },
+  {
+    "chunkId": "32030",
+    "sidoCode": "32",
+    "sigunguCode": "32030",
+    "file": "/data/geojson/korea/emd-by-sigungu/32030.json",
+    "featureCount": 21,
+    "bbox": [
+      128.58036,
+      37.503296,
+      129.074875,
+      37.917534
+    ],
+    "bytes": 193334
+  },
+  {
+    "chunkId": "32040",
+    "sidoCode": "32",
+    "sigunguCode": "32040",
+    "file": "/data/geojson/korea/emd-by-sigungu/32040.json",
+    "featureCount": 10,
+    "bbox": [
+      128.957618,
+      37.426798,
+      129.159771,
+      37.604862
+    ],
+    "bytes": 53988
+  },
+  {
+    "chunkId": "32050",
+    "sidoCode": "32",
+    "sigunguCode": "32050",
+    "file": "/data/geojson/korea/emd-by-sigungu/32050.json",
+    "featureCount": 8,
+    "bbox": [
+      128.869081,
+      37.061685,
+      129.09566,
+      37.345593
+    ],
+    "bytes": 60053
+  },
+  {
+    "chunkId": "32060",
+    "sidoCode": "32",
+    "sigunguCode": "32060",
+    "file": "/data/geojson/korea/emd-by-sigungu/32060.json",
+    "featureCount": 8,
+    "bbox": [
+      128.42114,
+      38.118953,
+      128.614818,
+      38.230772
+    ],
+    "bytes": 43840
+  },
+  {
+    "chunkId": "32070",
+    "sidoCode": "32",
+    "sigunguCode": "32070",
+    "file": "/data/geojson/korea/emd-by-sigungu/32070.json",
+    "featureCount": 12,
+    "bbox": [
+      128.845936,
+      37.038665,
+      129.365672,
+      37.476245
+    ],
+    "bytes": 148092
+  },
+  {
+    "chunkId": "32310",
+    "sidoCode": "32",
+    "sigunguCode": "32310",
+    "file": "/data/geojson/korea/emd-by-sigungu/32310.json",
+    "featureCount": 10,
+    "bbox": [
+      127.535245,
+      37.552302,
+      128.588796,
+      37.94552
+    ],
+    "bytes": 185871
+  },
+  {
+    "chunkId": "32320",
+    "sidoCode": "32",
+    "sigunguCode": "32320",
+    "file": "/data/geojson/korea/emd-by-sigungu/32320.json",
+    "featureCount": 9,
+    "bbox": [
+      127.759421,
+      37.29878,
+      128.302267,
+      37.68016
+    ],
+    "bytes": 126997
+  },
+  {
+    "chunkId": "32330",
+    "sidoCode": "32",
+    "sigunguCode": "32330",
+    "file": "/data/geojson/korea/emd-by-sigungu/32330.json",
+    "featureCount": 9,
+    "bbox": [
+      128.107162,
+      37.027832,
+      128.910417,
+      37.408711
+    ],
+    "bytes": 147459
+  },
+  {
+    "chunkId": "32340",
+    "sidoCode": "32",
+    "sigunguCode": "32340",
+    "file": "/data/geojson/korea/emd-by-sigungu/32340.json",
+    "featureCount": 8,
+    "bbox": [
+      128.243529,
+      37.266635,
+      128.765111,
+      37.821385
+    ],
+    "bytes": 127141
+  },
+  {
+    "chunkId": "32350",
+    "sidoCode": "32",
+    "sigunguCode": "32350",
+    "file": "/data/geojson/korea/emd-by-sigungu/32350.json",
+    "featureCount": 9,
+    "bbox": [
+      128.506245,
+      37.147077,
+      128.989663,
+      37.592916
+    ],
+    "bytes": 126673
+  },
+  {
+    "chunkId": "32360",
+    "sidoCode": "32",
+    "sigunguCode": "32360",
+    "file": "/data/geojson/korea/emd-by-sigungu/32360.json",
+    "featureCount": 11,
+    "bbox": [
+      127.095037,
+      38.089769,
+      127.888468,
+      38.348999
+    ],
+    "bytes": 140568
+  },
+  {
+    "chunkId": "32370",
+    "sidoCode": "32",
+    "sigunguCode": "32370",
+    "file": "/data/geojson/korea/emd-by-sigungu/32370.json",
+    "featureCount": 5,
+    "bbox": [
+      127.430532,
+      37.994287,
+      127.913638,
+      38.288057
+    ],
+    "bytes": 73005
+  },
+  {
+    "chunkId": "32380",
+    "sidoCode": "32",
+    "sigunguCode": "32380",
+    "file": "/data/geojson/korea/emd-by-sigungu/32380.json",
+    "featureCount": 5,
+    "bbox": [
+      127.851745,
+      38.001625,
+      128.172391,
+      38.329329
+    ],
+    "bytes": 60306
+  },
+  {
+    "chunkId": "32390",
+    "sidoCode": "32",
+    "sigunguCode": "32390",
+    "file": "/data/geojson/korea/emd-by-sigungu/32390.json",
+    "featureCount": 6,
+    "bbox": [
+      127.977512,
+      37.812077,
+      128.513574,
+      38.389642
+    ],
+    "bytes": 130306
+  },
+  {
+    "chunkId": "32400",
+    "sidoCode": "32",
+    "sigunguCode": "32400",
+    "file": "/data/geojson/korea/emd-by-sigungu/32400.json",
+    "featureCount": 6,
+    "bbox": [
+      128.22615,
+      38.187331,
+      128.584933,
+      38.613709
+    ],
+    "bytes": 104659
+  },
+  {
+    "chunkId": "32410",
+    "sidoCode": "32",
+    "sigunguCode": "32410",
+    "file": "/data/geojson/korea/emd-by-sigungu/32410.json",
+    "featureCount": 6,
+    "bbox": [
+      128.404247,
+      37.862019,
+      128.810002,
+      38.161618
+    ],
+    "bytes": 104211
+  },
+  {
+    "chunkId": "33020",
+    "sidoCode": "33",
+    "sigunguCode": "33020",
+    "file": "/data/geojson/korea/emd-by-sigungu/33020.json",
+    "featureCount": 25,
+    "bbox": [
+      127.650851,
+      36.796638,
+      128.134044,
+      37.214861
+    ],
+    "bytes": 217225
+  },
+  {
+    "chunkId": "33030",
+    "sidoCode": "33",
+    "sigunguCode": "33030",
+    "file": "/data/geojson/korea/emd-by-sigungu/33030.json",
+    "featureCount": 17,
+    "bbox": [
+      127.921583,
+      36.811695,
+      128.332183,
+      37.258334
+    ],
+    "bytes": 168543
+  },
+  {
+    "chunkId": "33041",
+    "sidoCode": "33",
+    "sigunguCode": "33041",
+    "file": "/data/geojson/korea/emd-by-sigungu/33041.json",
+    "featureCount": 13,
+    "bbox": [
+      127.445262,
+      36.408206,
+      127.769782,
+      36.729993
+    ],
+    "bytes": 101680
+  },
+  {
+    "chunkId": "33042",
+    "sidoCode": "33",
+    "sigunguCode": "33042",
+    "file": "/data/geojson/korea/emd-by-sigungu/33042.json",
+    "featureCount": 11,
+    "bbox": [
+      127.372547,
+      36.449195,
+      127.498917,
+      36.646465
+    ],
+    "bytes": 50217
+  },
+  {
+    "chunkId": "33043",
+    "sidoCode": "33",
+    "sigunguCode": "33043",
+    "file": "/data/geojson/korea/emd-by-sigungu/33043.json",
+    "featureCount": 11,
+    "bbox": [
+      127.27565,
+      36.561685,
+      127.481855,
+      36.724908
+    ],
+    "bytes": 98106
+  },
+  {
+    "chunkId": "33044",
+    "sidoCode": "33",
+    "sigunguCode": "33044",
+    "file": "/data/geojson/korea/emd-by-sigungu/33044.json",
+    "featureCount": 8,
+    "bbox": [
+      127.318013,
+      36.644836,
+      127.618915,
+      36.780263
+    ],
+    "bytes": 71556
+  },
+  {
+    "chunkId": "33320",
+    "sidoCode": "33",
+    "sigunguCode": "33320",
+    "file": "/data/geojson/korea/emd-by-sigungu/33320.json",
+    "featureCount": 11,
+    "bbox": [
+      127.514513,
+      36.368974,
+      127.906336,
+      36.613774
+    ],
+    "bytes": 113298
+  },
+  {
+    "chunkId": "33330",
+    "sidoCode": "33",
+    "sigunguCode": "33330",
+    "file": "/data/geojson/korea/emd-by-sigungu/33330.json",
+    "featureCount": 9,
+    "bbox": [
+      127.486048,
+      36.17071,
+      127.89126,
+      36.445289
+    ],
+    "bytes": 107044
+  },
+  {
+    "chunkId": "33340",
+    "sidoCode": "33",
+    "sigunguCode": "33340",
+    "file": "/data/geojson/korea/emd-by-sigungu/33340.json",
+    "featureCount": 11,
+    "bbox": [
+      127.589437,
+      36.012226,
+      128.058146,
+      36.316601
+    ],
+    "bytes": 134184
+  },
+  {
+    "chunkId": "33350",
+    "sidoCode": "33",
+    "sigunguCode": "33350",
+    "file": "/data/geojson/korea/emd-by-sigungu/33350.json",
+    "featureCount": 7,
+    "bbox": [
+      127.287829,
+      36.74897,
+      127.58516,
+      37.012114
+    ],
+    "bytes": 98667
+  },
+  {
+    "chunkId": "33360",
+    "sidoCode": "33",
+    "sigunguCode": "33360",
+    "file": "/data/geojson/korea/emd-by-sigungu/33360.json",
+    "featureCount": 11,
+    "bbox": [
+      127.620458,
+      36.601118,
+      128.072724,
+      36.947554
+    ],
+    "bytes": 148308
+  },
+  {
+    "chunkId": "33370",
+    "sidoCode": "33",
+    "sigunguCode": "33370",
+    "file": "/data/geojson/korea/emd-by-sigungu/33370.json",
+    "featureCount": 9,
+    "bbox": [
+      127.445348,
+      36.83383,
+      127.798331,
+      37.155286
+    ],
+    "bytes": 118226
+  },
+  {
+    "chunkId": "33380",
+    "sidoCode": "33",
+    "sigunguCode": "33380",
+    "file": "/data/geojson/korea/emd-by-sigungu/33380.json",
+    "featureCount": 8,
+    "bbox": [
+      128.217125,
+      36.802076,
+      128.652096,
+      37.158144
+    ],
+    "bytes": 108490
+  },
+  {
+    "chunkId": "33390",
+    "sidoCode": "33",
+    "sigunguCode": "33390",
+    "file": "/data/geojson/korea/emd-by-sigungu/33390.json",
+    "featureCount": 2,
+    "bbox": [
+      127.537327,
+      36.701281,
+      127.6646,
+      36.860075
+    ],
+    "bytes": 22733
+  },
+  {
+    "chunkId": "34011",
+    "sidoCode": "34",
+    "sigunguCode": "34011",
+    "file": "/data/geojson/korea/emd-by-sigungu/34011.json",
+    "featureCount": 17,
+    "bbox": [
+      127.008364,
+      36.61975,
+      127.420417,
+      36.892197
+    ],
+    "bytes": 121798
+  },
+  {
+    "chunkId": "34012",
+    "sidoCode": "34",
+    "sigunguCode": "34012",
+    "file": "/data/geojson/korea/emd-by-sigungu/34012.json",
+    "featureCount": 13,
+    "bbox": [
+      127.074082,
+      36.784927,
+      127.290588,
+      36.971473
+    ],
+    "bytes": 73914
+  },
+  {
+    "chunkId": "34020",
+    "sidoCode": "34",
+    "sigunguCode": "34020",
+    "file": "/data/geojson/korea/emd-by-sigungu/34020.json",
+    "featureCount": 16,
+    "bbox": [
+      126.883573,
+      36.277149,
+      127.282297,
+      36.679247
+    ],
+    "bytes": 162117
+  },
+  {
+    "chunkId": "34030",
+    "sidoCode": "34",
+    "sigunguCode": "34030",
+    "file": "/data/geojson/korea/emd-by-sigungu/34030.json",
+    "featureCount": 16,
+    "bbox": [
+      125.957759,
+      36.172278,
+      126.738715,
+      36.523983
+    ],
+    "bytes": 288947
+  },
+  {
+    "chunkId": "34040",
+    "sidoCode": "34",
+    "sigunguCode": "34040",
+    "file": "/data/geojson/korea/emd-by-sigungu/34040.json",
+    "featureCount": 17,
+    "bbox": [
+      126.829094,
+      36.648612,
+      127.119714,
+      36.942241
+    ],
+    "bytes": 158507
+  },
+  {
+    "chunkId": "34050",
+    "sidoCode": "34",
+    "sigunguCode": "34050",
+    "file": "/data/geojson/korea/emd-by-sigungu/34050.json",
+    "featureCount": 15,
+    "bbox": [
+      126.317815,
+      36.600338,
+      126.653621,
+      37.026645
+    ],
+    "bytes": 203324
+  },
+  {
+    "chunkId": "34060",
+    "sidoCode": "34",
+    "sigunguCode": "34060",
+    "file": "/data/geojson/korea/emd-by-sigungu/34060.json",
+    "featureCount": 15,
+    "bbox": [
+      126.984016,
+      36.063582,
+      127.333569,
+      36.340285
+    ],
+    "bytes": 154563
+  },
+  {
+    "chunkId": "34070",
+    "sidoCode": "34",
+    "sigunguCode": "34070",
+    "file": "/data/geojson/korea/emd-by-sigungu/34070.json",
+    "featureCount": 4,
+    "bbox": [
+      127.196375,
+      36.231899,
+      127.291935,
+      36.350249
+    ],
+    "bytes": 24456
+  },
+  {
+    "chunkId": "34080",
+    "sidoCode": "34",
+    "sigunguCode": "34080",
+    "file": "/data/geojson/korea/emd-by-sigungu/34080.json",
+    "featureCount": 14,
+    "bbox": [
+      126.417412,
+      36.749262,
+      126.859061,
+      37.064943
+    ],
+    "bytes": 196147
+  },
+  {
+    "chunkId": "34310",
+    "sidoCode": "34",
+    "sigunguCode": "34310",
+    "file": "/data/geojson/korea/emd-by-sigungu/34310.json",
+    "featureCount": 10,
+    "bbox": [
+      127.318385,
+      35.978264,
+      127.639748,
+      36.272189
+    ],
+    "bytes": 117025
+  },
+  {
+    "chunkId": "34330",
+    "sidoCode": "34",
+    "sigunguCode": "34330",
+    "file": "/data/geojson/korea/emd-by-sigungu/34330.json",
+    "featureCount": 16,
+    "bbox": [
+      126.678452,
+      36.071572,
+      127.070308,
+      36.387042
+    ],
+    "bytes": 164128
+  },
+  {
+    "chunkId": "34340",
+    "sidoCode": "34",
+    "sigunguCode": "34340",
+    "file": "/data/geojson/korea/emd-by-sigungu/34340.json",
+    "featureCount": 13,
+    "bbox": [
+      126.48421,
+      35.986623,
+      126.871086,
+      36.192148
+    ],
+    "bytes": 150581
+  },
+  {
+    "chunkId": "34350",
+    "sidoCode": "34",
+    "sigunguCode": "34350",
+    "file": "/data/geojson/korea/emd-by-sigungu/34350.json",
+    "featureCount": 10,
+    "bbox": [
+      126.67193,
+      36.314498,
+      127.028246,
+      36.571812
+    ],
+    "bytes": 113032
+  },
+  {
+    "chunkId": "34360",
+    "sidoCode": "34",
+    "sigunguCode": "34360",
+    "file": "/data/geojson/korea/emd-by-sigungu/34360.json",
+    "featureCount": 11,
+    "bbox": [
+      126.430446,
+      36.459734,
+      126.773191,
+      36.672583
+    ],
+    "bytes": 135758
+  },
+  {
+    "chunkId": "34370",
+    "sidoCode": "34",
+    "sigunguCode": "34370",
+    "file": "/data/geojson/korea/emd-by-sigungu/34370.json",
+    "featureCount": 12,
+    "bbox": [
+      126.585325,
+      36.526663,
+      126.972343,
+      36.803721
+    ],
+    "bytes": 140293
+  },
+  {
+    "chunkId": "34380",
+    "sidoCode": "34",
+    "sigunguCode": "34380",
+    "file": "/data/geojson/korea/emd-by-sigungu/34380.json",
+    "featureCount": 8,
+    "bbox": [
+      125.541805,
+      36.399184,
+      126.436259,
+      36.978477
+    ],
+    "bytes": 435880
+  },
+  {
+    "chunkId": "35011",
+    "sidoCode": "35",
+    "sigunguCode": "35011",
+    "file": "/data/geojson/korea/emd-by-sigungu/35011.json",
+    "featureCount": 18,
+    "bbox": [
+      127.050418,
+      35.728574,
+      127.21702,
+      35.843293
+    ],
+    "bytes": 63216
+  },
+  {
+    "chunkId": "35012",
+    "sidoCode": "35",
+    "sigunguCode": "35012",
+    "file": "/data/geojson/korea/emd-by-sigungu/35012.json",
+    "featureCount": 15,
+    "bbox": [
+      126.997844,
+      35.801651,
+      127.234289,
+      35.903107
+    ],
+    "bytes": 78227
+  },
+  {
+    "chunkId": "35020",
+    "sidoCode": "35",
+    "sigunguCode": "35020",
+    "file": "/data/geojson/korea/emd-by-sigungu/35020.json",
+    "featureCount": 27,
+    "bbox": [
+      125.9666,
+      35.674303,
+      126.915402,
+      36.127391
+    ],
+    "bytes": 541810
+  },
+  {
+    "chunkId": "35030",
+    "sidoCode": "35",
+    "sigunguCode": "35030",
+    "file": "/data/geojson/korea/emd-by-sigungu/35030.json",
+    "featureCount": 29,
+    "bbox": [
+      126.851407,
+      35.883494,
+      127.139722,
+      36.15657
+    ],
+    "bytes": 191165
+  },
+  {
+    "chunkId": "35040",
+    "sidoCode": "35",
+    "sigunguCode": "35040",
+    "file": "/data/geojson/korea/emd-by-sigungu/35040.json",
+    "featureCount": 23,
+    "bbox": [
+      126.715523,
+      35.461207,
+      127.116937,
+      35.758728
+    ],
+    "bytes": 198849
+  },
+  {
+    "chunkId": "35050",
+    "sidoCode": "35",
+    "sigunguCode": "35050",
+    "file": "/data/geojson/korea/emd-by-sigungu/35050.json",
+    "featureCount": 23,
+    "bbox": [
+      127.183907,
+      35.302458,
+      127.674069,
+      35.560821
+    ],
+    "bytes": 172137
+  },
+  {
+    "chunkId": "35060",
+    "sidoCode": "35",
+    "sigunguCode": "35060",
+    "file": "/data/geojson/korea/emd-by-sigungu/35060.json",
+    "featureCount": 19,
+    "bbox": [
+      126.676494,
+      35.666165,
+      127.086679,
+      35.917711
+    ],
+    "bytes": 170371
+  },
+  {
+    "chunkId": "35310",
+    "sidoCode": "35",
+    "sigunguCode": "35310",
+    "file": "/data/geojson/korea/emd-by-sigungu/35310.json",
+    "featureCount": 13,
+    "bbox": [
+      126.995154,
+      35.618893,
+      127.378213,
+      36.130841
+    ],
+    "bytes": 172085
+  },
+  {
+    "chunkId": "35320",
+    "sidoCode": "35",
+    "sigunguCode": "35320",
+    "file": "/data/geojson/korea/emd-by-sigungu/35320.json",
+    "featureCount": 11,
+    "bbox": [
+      127.265299,
+      35.618696,
+      127.62484,
+      36.029495
+    ],
+    "bytes": 138882
+  },
+  {
+    "chunkId": "35330",
+    "sidoCode": "35",
+    "sigunguCode": "35330",
+    "file": "/data/geojson/korea/emd-by-sigungu/35330.json",
+    "featureCount": 6,
+    "bbox": [
+      127.524369,
+      35.788231,
+      127.911367,
+      36.068595
+    ],
+    "bytes": 91435
+  },
+  {
+    "chunkId": "35340",
+    "sidoCode": "35",
+    "sigunguCode": "35340",
+    "file": "/data/geojson/korea/emd-by-sigungu/35340.json",
+    "featureCount": 7,
+    "bbox": [
+      127.362179,
+      35.467814,
+      127.699735,
+      35.838943
+    ],
+    "bytes": 91026
+  },
+  {
+    "chunkId": "35350",
+    "sidoCode": "35",
+    "sigunguCode": "35350",
+    "file": "/data/geojson/korea/emd-by-sigungu/35350.json",
+    "featureCount": 12,
+    "bbox": [
+      127.083099,
+      35.459786,
+      127.436286,
+      35.777647
+    ],
+    "bytes": 135731
+  },
+  {
+    "chunkId": "35360",
+    "sidoCode": "35",
+    "sigunguCode": "35360",
+    "file": "/data/geojson/korea/emd-by-sigungu/35360.json",
+    "featureCount": 11,
+    "bbox": [
+      126.859739,
+      35.299233,
+      127.31427,
+      35.556127
+    ],
+    "bytes": 108994
+  },
+  {
+    "chunkId": "35370",
+    "sidoCode": "35",
+    "sigunguCode": "35370",
+    "file": "/data/geojson/korea/emd-by-sigungu/35370.json",
+    "featureCount": 14,
+    "bbox": [
+      126.423221,
+      35.300787,
+      126.773608,
+      35.574822
+    ],
+    "bytes": 217320
+  },
+  {
+    "chunkId": "35380",
+    "sidoCode": "35",
+    "sigunguCode": "35380",
+    "file": "/data/geojson/korea/emd-by-sigungu/35380.json",
+    "featureCount": 13,
+    "bbox": [
+      126.100214,
+      35.566674,
+      126.840905,
+      35.812869
+    ],
+    "bytes": 334008
+  },
+  {
+    "chunkId": "36010",
+    "sidoCode": "36",
+    "sigunguCode": "36010",
+    "file": "/data/geojson/korea/emd-by-sigungu/36010.json",
+    "featureCount": 23,
+    "bbox": [
+      126.288349,
+      34.744776,
+      126.45944,
+      34.844198
+    ],
+    "bytes": 119162
+  },
+  {
+    "chunkId": "36020",
+    "sidoCode": "36",
+    "sigunguCode": "36020",
+    "file": "/data/geojson/korea/emd-by-sigungu/36020.json",
+    "featureCount": 27,
+    "bbox": [
+      127.217644,
+      34.005914,
+      127.905175,
+      34.899131
+    ],
+    "bytes": 810190
+  },
+  {
+    "chunkId": "36030",
+    "sidoCode": "36",
+    "sigunguCode": "36030",
+    "file": "/data/geojson/korea/emd-by-sigungu/36030.json",
+    "featureCount": 24,
+    "bbox": [
+      127.174844,
+      34.832047,
+      127.594693,
+      35.189119
+    ],
+    "bytes": 205186
+  },
+  {
+    "chunkId": "36040",
+    "sidoCode": "36",
+    "sigunguCode": "36040",
+    "file": "/data/geojson/korea/emd-by-sigungu/36040.json",
+    "featureCount": 20,
+    "bbox": [
+      126.51331,
+      34.867938,
+      126.8992,
+      35.114856
+    ],
+    "bytes": 221041
+  },
+  {
+    "chunkId": "36060",
+    "sidoCode": "36",
+    "sigunguCode": "36060",
+    "file": "/data/geojson/korea/emd-by-sigungu/36060.json",
+    "featureCount": 12,
+    "bbox": [
+      127.525505,
+      34.883785,
+      127.786768,
+      35.182574
+    ],
+    "bytes": 126677
+  },
+  {
+    "chunkId": "36310",
+    "sidoCode": "36",
+    "sigunguCode": "36310",
+    "file": "/data/geojson/korea/emd-by-sigungu/36310.json",
+    "featureCount": 12,
+    "bbox": [
+      126.854203,
+      35.115954,
+      127.117998,
+      35.466572
+    ],
+    "bytes": 122315
+  },
+  {
+    "chunkId": "36320",
+    "sidoCode": "36",
+    "sigunguCode": "36320",
+    "file": "/data/geojson/korea/emd-by-sigungu/36320.json",
+    "featureCount": 11,
+    "bbox": [
+      127.081233,
+      35.069363,
+      127.41228,
+      35.336949
+    ],
+    "bytes": 126241
+  },
+  {
+    "chunkId": "36330",
+    "sidoCode": "36",
+    "sigunguCode": "36330",
+    "file": "/data/geojson/korea/emd-by-sigungu/36330.json",
+    "featureCount": 8,
+    "bbox": [
+      127.366887,
+      35.095293,
+      127.624625,
+      35.365336
+    ],
+    "bytes": 77849
+  },
+  {
+    "chunkId": "36350",
+    "sidoCode": "36",
+    "sigunguCode": "36350",
+    "file": "/data/geojson/korea/emd-by-sigungu/36350.json",
+    "featureCount": 16,
+    "bbox": [
+      127.081731,
+      34.317271,
+      127.544992,
+      34.827744
+    ],
+    "bytes": 571725
+  },
+  {
+    "chunkId": "36360",
+    "sidoCode": "36",
+    "sigunguCode": "36360",
+    "file": "/data/geojson/korea/emd-by-sigungu/36360.json",
+    "featureCount": 12,
+    "bbox": [
+      126.971845,
+      34.634966,
+      127.476362,
+      34.987529
+    ],
+    "bytes": 188834
+  },
+  {
+    "chunkId": "36370",
+    "sidoCode": "36",
+    "sigunguCode": "36370",
+    "file": "/data/geojson/korea/emd-by-sigungu/36370.json",
+    "featureCount": 13,
+    "bbox": [
+      126.823878,
+      34.823698,
+      127.201035,
+      35.214294
+    ],
+    "bytes": 152031
+  },
+  {
+    "chunkId": "36380",
+    "sidoCode": "36",
+    "sigunguCode": "36380",
+    "file": "/data/geojson/korea/emd-by-sigungu/36380.json",
+    "featureCount": 10,
+    "bbox": [
+      126.792934,
+      34.421983,
+      127.046211,
+      34.877827
+    ],
+    "bytes": 169116
+  },
+  {
+    "chunkId": "36390",
+    "sidoCode": "36",
+    "sigunguCode": "36390",
+    "file": "/data/geojson/korea/emd-by-sigungu/36390.json",
+    "featureCount": 11,
+    "bbox": [
+      126.656481,
+      34.447742,
+      126.885849,
+      34.786442
+    ],
+    "bytes": 146426
+  },
+  {
+    "chunkId": "36400",
+    "sidoCode": "36",
+    "sigunguCode": "36400",
+    "file": "/data/geojson/korea/emd-by-sigungu/36400.json",
+    "featureCount": 14,
+    "bbox": [
+      126.239157,
+      34.292256,
+      126.734864,
+      34.762393
+    ],
+    "bytes": 334687
+  },
+  {
+    "chunkId": "36410",
+    "sidoCode": "36",
+    "sigunguCode": "36410",
+    "file": "/data/geojson/korea/emd-by-sigungu/36410.json",
+    "featureCount": 11,
+    "bbox": [
+      126.360562,
+      34.657838,
+      126.85929,
+      34.94623
+    ],
+    "bytes": 165498
+  },
+  {
+    "chunkId": "36420",
+    "sidoCode": "36",
+    "sigunguCode": "36420",
+    "file": "/data/geojson/korea/emd-by-sigungu/36420.json",
+    "featureCount": 9,
+    "bbox": [
+      126.243343,
+      34.768472,
+      126.556998,
+      35.167313
+    ],
+    "bytes": 219594
+  },
+  {
+    "chunkId": "36430",
+    "sidoCode": "36",
+    "sigunguCode": "36430",
+    "file": "/data/geojson/korea/emd-by-sigungu/36430.json",
+    "featureCount": 9,
+    "bbox": [
+      126.370318,
+      34.97351,
+      126.672117,
+      35.235582
+    ],
+    "bytes": 121373
+  },
+  {
+    "chunkId": "36440",
+    "sidoCode": "36",
+    "sigunguCode": "36440",
+    "file": "/data/geojson/korea/emd-by-sigungu/36440.json",
+    "featureCount": 11,
+    "bbox": [
+      125.98504,
+      35.163692,
+      126.644799,
+      35.432698
+    ],
+    "bytes": 295908
+  },
+  {
+    "chunkId": "36450",
+    "sidoCode": "36",
+    "sigunguCode": "36450",
+    "file": "/data/geojson/korea/emd-by-sigungu/36450.json",
+    "featureCount": 11,
+    "bbox": [
+      126.583317,
+      35.190718,
+      126.925656,
+      35.486914
+    ],
+    "bytes": 135614
+  },
+  {
+    "chunkId": "36460",
+    "sidoCode": "36",
+    "sigunguCode": "36460",
+    "file": "/data/geojson/korea/emd-by-sigungu/36460.json",
+    "featureCount": 12,
+    "bbox": [
+      126.380493,
+      33.968573,
+      127.20123,
+      34.460001
+    ],
+    "bytes": 696830
+  },
+  {
+    "chunkId": "36470",
+    "sidoCode": "36",
+    "sigunguCode": "36470",
+    "file": "/data/geojson/korea/emd-by-sigungu/36470.json",
+    "featureCount": 7,
+    "bbox": [
+      125.840534,
+      34.140719,
+      126.385016,
+      34.589081
+    ],
+    "bytes": 871093
+  },
+  {
+    "chunkId": "36480",
+    "sidoCode": "36",
+    "sigunguCode": "36480",
+    "file": "/data/geojson/korea/emd-by-sigungu/36480.json",
+    "featureCount": 14,
+    "bbox": [
+      125.081473,
+      34.047528,
+      126.378801,
+      35.213092
+    ],
+    "bytes": 2005510
+  },
+  {
+    "chunkId": "37011",
+    "sidoCode": "37",
+    "sigunguCode": "37011",
+    "file": "/data/geojson/korea/emd-by-sigungu/37011.json",
+    "featureCount": 14,
+    "bbox": [
+      129.276816,
+      35.838339,
+      129.584419,
+      36.086086
+    ],
+    "bytes": 172392
+  },
+  {
+    "chunkId": "37012",
+    "sidoCode": "37",
+    "sigunguCode": "37012",
+    "file": "/data/geojson/korea/emd-by-sigungu/37012.json",
+    "featureCount": 15,
+    "bbox": [
+      128.989491,
+      36.014152,
+      129.464386,
+      36.333365
+    ],
+    "bytes": 129458
+  },
+  {
+    "chunkId": "37020",
+    "sidoCode": "37",
+    "sigunguCode": "37020",
+    "file": "/data/geojson/korea/emd-by-sigungu/37020.json",
+    "featureCount": 23,
+    "bbox": [
+      128.970727,
+      35.640356,
+      129.520595,
+      36.079697
+    ],
+    "bytes": 235542
+  },
+  {
+    "chunkId": "37030",
+    "sidoCode": "37",
+    "sigunguCode": "37030",
+    "file": "/data/geojson/korea/emd-by-sigungu/37030.json",
+    "featureCount": 22,
+    "bbox": [
+      127.875271,
+      35.828934,
+      128.301234,
+      36.258082
+    ],
+    "bytes": 203404
+  },
+  {
+    "chunkId": "37040",
+    "sidoCode": "37",
+    "sigunguCode": "37040",
+    "file": "/data/geojson/korea/emd-by-sigungu/37040.json",
+    "featureCount": 24,
+    "bbox": [
+      128.428489,
+      36.295724,
+      129.000753,
+      36.823163
+    ],
+    "bytes": 280927
+  },
+  {
+    "chunkId": "37050",
+    "sidoCode": "37",
+    "sigunguCode": "37050",
+    "file": "/data/geojson/korea/emd-by-sigungu/37050.json",
+    "featureCount": 27,
+    "bbox": [
+      128.13278,
+      36.060581,
+      128.564003,
+      36.362467
+    ],
+    "bytes": 153333
+  },
+  {
+    "chunkId": "37060",
+    "sidoCode": "37",
+    "sigunguCode": "37060",
+    "file": "/data/geojson/korea/emd-by-sigungu/37060.json",
+    "featureCount": 19,
+    "bbox": [
+      128.42397,
+      36.695905,
+      128.745569,
+      37.065515
+    ],
+    "bytes": 180475
+  },
+  {
+    "chunkId": "37070",
+    "sidoCode": "37",
+    "sigunguCode": "37070",
+    "file": "/data/geojson/korea/emd-by-sigungu/37070.json",
+    "featureCount": 16,
+    "bbox": [
+      128.694159,
+      35.830723,
+      129.151327,
+      36.184593
+    ],
+    "bytes": 182723
+  },
+  {
+    "chunkId": "37080",
+    "sidoCode": "37",
+    "sigunguCode": "37080",
+    "file": "/data/geojson/korea/emd-by-sigungu/37080.json",
+    "featureCount": 24,
+    "bbox": [
+      127.796152,
+      36.237164,
+      128.339037,
+      36.656767
+    ],
+    "bytes": 262948
+  },
+  {
+    "chunkId": "37090",
+    "sidoCode": "37",
+    "sigunguCode": "37090",
+    "file": "/data/geojson/korea/emd-by-sigungu/37090.json",
+    "featureCount": 14,
+    "bbox": [
+      127.874293,
+      36.513023,
+      128.372049,
+      36.872326
+    ],
+    "bytes": 144225
+  },
+  {
+    "chunkId": "37100",
+    "sidoCode": "37",
+    "sigunguCode": "37100",
+    "file": "/data/geojson/korea/emd-by-sigungu/37100.json",
+    "featureCount": 15,
+    "bbox": [
+      128.681397,
+      35.700501,
+      128.970919,
+      35.993923
+    ],
+    "bytes": 127518
+  },
+  {
+    "chunkId": "37310",
+    "sidoCode": "37",
+    "sigunguCode": "37310",
+    "file": "/data/geojson/korea/emd-by-sigungu/37310.json",
+    "featureCount": 8,
+    "bbox": [
+      128.410439,
+      36.007307,
+      128.900197,
+      36.327236
+    ],
+    "bytes": 96658
+  },
+  {
+    "chunkId": "37320",
+    "sidoCode": "37",
+    "sigunguCode": "37320",
+    "file": "/data/geojson/korea/emd-by-sigungu/37320.json",
+    "featureCount": 18,
+    "bbox": [
+      128.287682,
+      36.190713,
+      128.896621,
+      36.532592
+    ],
+    "bytes": 212754
+  },
+  {
+    "chunkId": "37330",
+    "sidoCode": "37",
+    "sigunguCode": "37330",
+    "file": "/data/geojson/korea/emd-by-sigungu/37330.json",
+    "featureCount": 8,
+    "bbox": [
+      128.846888,
+      36.161265,
+      129.254209,
+      36.5948
+    ],
+    "bytes": 120575
+  },
+  {
+    "chunkId": "37340",
+    "sidoCode": "37",
+    "sigunguCode": "37340",
+    "file": "/data/geojson/korea/emd-by-sigungu/37340.json",
+    "featureCount": 6,
+    "bbox": [
+      128.983783,
+      36.488921,
+      129.314099,
+      36.881547
+    ],
+    "bytes": 102059
+  },
+  {
+    "chunkId": "37350",
+    "sidoCode": "37",
+    "sigunguCode": "37350",
+    "file": "/data/geojson/korea/emd-by-sigungu/37350.json",
+    "featureCount": 9,
+    "bbox": [
+      129.147708,
+      36.266556,
+      129.453298,
+      36.673872
+    ],
+    "bytes": 145957
+  },
+  {
+    "chunkId": "37360",
+    "sidoCode": "37",
+    "sigunguCode": "37360",
+    "file": "/data/geojson/korea/emd-by-sigungu/37360.json",
+    "featureCount": 9,
+    "bbox": [
+      128.526808,
+      35.566888,
+      129.046901,
+      35.846199
+    ],
+    "bytes": 105398
+  },
+  {
+    "chunkId": "37370",
+    "sidoCode": "37",
+    "sigunguCode": "37370",
+    "file": "/data/geojson/korea/emd-by-sigungu/37370.json",
+    "featureCount": 8,
+    "bbox": [
+      128.159328,
+      35.610881,
+      128.483069,
+      35.852406
+    ],
+    "bytes": 78079
+  },
+  {
+    "chunkId": "37380",
+    "sidoCode": "37",
+    "sigunguCode": "37380",
+    "file": "/data/geojson/korea/emd-by-sigungu/37380.json",
+    "featureCount": 10,
+    "bbox": [
+      128.046651,
+      35.777192,
+      128.399135,
+      36.055395
+    ],
+    "bytes": 115728
+  },
+  {
+    "chunkId": "37390",
+    "sidoCode": "37",
+    "sigunguCode": "37390",
+    "file": "/data/geojson/korea/emd-by-sigungu/37390.json",
+    "featureCount": 8,
+    "bbox": [
+      128.284957,
+      35.886448,
+      128.64072,
+      36.124854
+    ],
+    "bytes": 81748
+  },
+  {
+    "chunkId": "37400",
+    "sidoCode": "37",
+    "sigunguCode": "37400",
+    "file": "/data/geojson/korea/emd-by-sigungu/37400.json",
+    "featureCount": 12,
+    "bbox": [
+      128.261775,
+      36.454458,
+      128.609674,
+      36.848606
+    ],
+    "bytes": 143328
+  },
+  {
+    "chunkId": "37410",
+    "sidoCode": "37",
+    "sigunguCode": "37410",
+    "file": "/data/geojson/korea/emd-by-sigungu/37410.json",
+    "featureCount": 10,
+    "bbox": [
+      128.637628,
+      36.746904,
+      129.185409,
+      37.100415
+    ],
+    "bytes": 170820
+  },
+  {
+    "chunkId": "37420",
+    "sidoCode": "37",
+    "sigunguCode": "37420",
+    "file": "/data/geojson/korea/emd-by-sigungu/37420.json",
+    "featureCount": 10,
+    "bbox": [
+      129.076657,
+      36.643504,
+      129.478219,
+      37.14683
+    ],
+    "bytes": 160574
+  },
+  {
+    "chunkId": "37430",
+    "sidoCode": "37",
+    "sigunguCode": "37430",
+    "file": "/data/geojson/korea/emd-by-sigungu/37430.json",
+    "featureCount": 3,
+    "bbox": [
+      130.791582,
+      37.23813,
+      131.871467,
+      37.549138
+    ],
+    "bytes": 51457
+  },
+  {
+    "chunkId": "38030",
+    "sidoCode": "38",
+    "sigunguCode": "38030",
+    "file": "/data/geojson/korea/emd-by-sigungu/38030.json",
+    "featureCount": 30,
+    "bbox": [
+      127.887818,
+      35.050924,
+      128.3682,
+      35.350806
+    ],
+    "bytes": 214733
+  },
+  {
+    "chunkId": "38050",
+    "sidoCode": "38",
+    "sigunguCode": "38050",
+    "file": "/data/geojson/korea/emd-by-sigungu/38050.json",
+    "featureCount": 15,
+    "bbox": [
+      128.124569,
+      34.534677,
+      128.734781,
+      34.976381
+    ],
+    "bytes": 499141
+  },
+  {
+    "chunkId": "38060",
+    "sidoCode": "38",
+    "sigunguCode": "38060",
+    "file": "/data/geojson/korea/emd-by-sigungu/38060.json",
+    "featureCount": 14,
+    "bbox": [
+      127.878979,
+      34.886005,
+      128.184323,
+      35.15885
+    ],
+    "bytes": 302469
+  },
+  {
+    "chunkId": "38070",
+    "sidoCode": "38",
+    "sigunguCode": "38070",
+    "file": "/data/geojson/korea/emd-by-sigungu/38070.json",
+    "featureCount": 19,
+    "bbox": [
+      128.692079,
+      35.150465,
+      129.014818,
+      35.395549
+    ],
+    "bytes": 128609
+  },
+  {
+    "chunkId": "38080",
+    "sidoCode": "38",
+    "sigunguCode": "38080",
+    "file": "/data/geojson/korea/emd-by-sigungu/38080.json",
+    "featureCount": 16,
+    "bbox": [
+      128.571167,
+      35.345507,
+      129.024623,
+      35.640619
+    ],
+    "bytes": 134597
+  },
+  {
+    "chunkId": "38090",
+    "sidoCode": "38",
+    "sigunguCode": "38090",
+    "file": "/data/geojson/korea/emd-by-sigungu/38090.json",
+    "featureCount": 18,
+    "bbox": [
+      128.45535,
+      34.681796,
+      128.754869,
+      35.040751
+    ],
+    "bytes": 421778
+  },
+  {
+    "chunkId": "38100",
+    "sidoCode": "38",
+    "sigunguCode": "38100",
+    "file": "/data/geojson/korea/emd-by-sigungu/38100.json",
+    "featureCount": 13,
+    "bbox": [
+      128.874073,
+      35.273759,
+      129.219072,
+      35.532268
+    ],
+    "bytes": 106413
+  },
+  {
+    "chunkId": "38111",
+    "sidoCode": "38",
+    "sigunguCode": "38111",
+    "file": "/data/geojson/korea/emd-by-sigungu/38111.json",
+    "featureCount": 8,
+    "bbox": [
+      128.559292,
+      35.217106,
+      128.764117,
+      35.393378
+    ],
+    "bytes": 64014
+  },
+  {
+    "chunkId": "38112",
+    "sidoCode": "38",
+    "sigunguCode": "38112",
+    "file": "/data/geojson/korea/emd-by-sigungu/38112.json",
+    "featureCount": 7,
+    "bbox": [
+      128.58925,
+      35.15098,
+      128.751394,
+      35.245997
+    ],
+    "bytes": 35033
+  },
+  {
+    "chunkId": "38113",
+    "sidoCode": "38",
+    "sigunguCode": "38113",
+    "file": "/data/geojson/korea/emd-by-sigungu/38113.json",
+    "featureCount": 16,
+    "bbox": [
+      128.348136,
+      35.052127,
+      128.640027,
+      35.222412
+    ],
+    "bytes": 181819
+  },
+  {
+    "chunkId": "38114",
+    "sidoCode": "38",
+    "sigunguCode": "38114",
+    "file": "/data/geojson/korea/emd-by-sigungu/38114.json",
+    "featureCount": 12,
+    "bbox": [
+      128.474173,
+      35.177085,
+      128.626943,
+      35.277077
+    ],
+    "bytes": 42528
+  },
+  {
+    "chunkId": "38115",
+    "sidoCode": "38",
+    "sigunguCode": "38115",
+    "file": "/data/geojson/korea/emd-by-sigungu/38115.json",
+    "featureCount": 15,
+    "bbox": [
+      128.606838,
+      35.055884,
+      128.84327,
+      35.180937
+    ],
+    "bytes": 121278
+  },
+  {
+    "chunkId": "38310",
+    "sidoCode": "38",
+    "sigunguCode": "38310",
+    "file": "/data/geojson/korea/emd-by-sigungu/38310.json",
+    "featureCount": 13,
+    "bbox": [
+      128.082649,
+      35.253366,
+      128.437447,
+      35.517384
+    ],
+    "bytes": 118197
+  },
+  {
+    "chunkId": "38320",
+    "sidoCode": "38",
+    "sigunguCode": "38320",
+    "file": "/data/geojson/korea/emd-by-sigungu/38320.json",
+    "featureCount": 10,
+    "bbox": [
+      128.274045,
+      35.164013,
+      128.59165,
+      35.401513
+    ],
+    "bytes": 105760
+  },
+  {
+    "chunkId": "38330",
+    "sidoCode": "38",
+    "sigunguCode": "38330",
+    "file": "/data/geojson/korea/emd-by-sigungu/38330.json",
+    "featureCount": 14,
+    "bbox": [
+      128.350623,
+      35.368567,
+      128.651639,
+      35.683155
+    ],
+    "bytes": 153801
+  },
+  {
+    "chunkId": "38340",
+    "sidoCode": "38",
+    "sigunguCode": "38340",
+    "file": "/data/geojson/korea/emd-by-sigungu/38340.json",
+    "featureCount": 14,
+    "bbox": [
+      128.100896,
+      34.875978,
+      128.501623,
+      35.132437
+    ],
+    "bytes": 276798
+  },
+  {
+    "chunkId": "38350",
+    "sidoCode": "38",
+    "sigunguCode": "38350",
+    "file": "/data/geojson/korea/emd-by-sigungu/38350.json",
+    "featureCount": 10,
+    "bbox": [
+      127.807706,
+      34.679619,
+      128.086827,
+      34.946986
+    ],
+    "bytes": 267312
+  },
+  {
+    "chunkId": "38360",
+    "sidoCode": "38",
+    "sigunguCode": "38360",
+    "file": "/data/geojson/korea/emd-by-sigungu/38360.json",
+    "featureCount": 13,
+    "bbox": [
+      127.576071,
+      34.923047,
+      127.939254,
+      35.332563
+    ],
+    "bytes": 188928
+  },
+  {
+    "chunkId": "38370",
+    "sidoCode": "38",
+    "sigunguCode": "38370",
+    "file": "/data/geojson/korea/emd-by-sigungu/38370.json",
+    "featureCount": 11,
+    "bbox": [
+      127.687911,
+      35.21927,
+      128.115199,
+      35.576211
+    ],
+    "bytes": 123087
+  },
+  {
+    "chunkId": "38380",
+    "sidoCode": "38",
+    "sigunguCode": "38380",
+    "file": "/data/geojson/korea/emd-by-sigungu/38380.json",
+    "featureCount": 11,
+    "bbox": [
+      127.584861,
+      35.315755,
+      127.877924,
+      35.771374
+    ],
+    "bytes": 124337
+  },
+  {
+    "chunkId": "38390",
+    "sidoCode": "38",
+    "sigunguCode": "38390",
+    "file": "/data/geojson/korea/emd-by-sigungu/38390.json",
+    "featureCount": 12,
+    "bbox": [
+      127.679436,
+      35.514428,
+      128.095184,
+      35.909944
+    ],
+    "bytes": 134749
+  },
+  {
+    "chunkId": "38400",
+    "sidoCode": "38",
+    "sigunguCode": "38400",
+    "file": "/data/geojson/korea/emd-by-sigungu/38400.json",
+    "featureCount": 17,
+    "bbox": [
+      127.953229,
+      35.367903,
+      128.379855,
+      35.832274
+    ],
+    "bytes": 188569
+  },
+  {
+    "chunkId": "39010",
+    "sidoCode": "39",
+    "sigunguCode": "39010",
+    "file": "/data/geojson/korea/emd-by-sigungu/39010.json",
+    "featureCount": 26,
+    "bbox": [
+      126.143694,
+      33.272964,
+      126.972657,
+      34.012872
+    ],
+    "bytes": 380062
+  },
+  {
+    "chunkId": "39020",
+    "sidoCode": "39",
+    "sigunguCode": "39020",
+    "file": "/data/geojson/korea/emd-by-sigungu/39020.json",
+    "featureCount": 17,
+    "bbox": [
+      126.168718,
+      33.112356,
+      126.946423,
+      33.482966
+    ],
+    "bytes": 290851
+  }
+]

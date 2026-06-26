@@ -1,0 +1,104 @@
+[
+  {
+    "code": "11",
+    "name": "서울특별시",
+    "name_eng": "Seoul",
+    "base_year": "2018"
+  },
+  {
+    "code": "21",
+    "name": "부산광역시",
+    "name_eng": "Busan",
+    "base_year": "2018"
+  },
+  {
+    "code": "22",
+    "name": "대구광역시",
+    "name_eng": "Daegu",
+    "base_year": "2018"
+  },
+  {
+    "code": "23",
+    "name": "인천광역시",
+    "name_eng": "Incheon",
+    "base_year": "2018"
+  },
+  {
+    "code": "24",
+    "name": "광주광역시",
+    "name_eng": "Gwangju",
+    "base_year": "2018"
+  },
+  {
+    "code": "25",
+    "name": "대전광역시",
+    "name_eng": "Daejeon",
+    "base_year": "2018"
+  },
+  {
+    "code": "26",
+    "name": "울산광역시",
+    "name_eng": "Ulsan",
+    "base_year": "2018"
+  },
+  {
+    "code": "29",
+    "name": "세종특별자치시",
+    "name_eng": "Sejongsi",
+    "base_year": "2018"
+  },
+  {
+    "code": "31",
+    "name": "경기도",
+    "name_eng": "Gyeonggi-do",
+    "base_year": "2018"
+  },
+  {
+    "code": "32",
+    "name": "강원도",
+    "name_eng": "Gangwon-do",
+    "base_year": "2018"
+  },
+  {
+    "code": "33",
+    "name": "충청북도",
+    "name_eng": "Chungcheongbuk-do",
+    "base_year": "2018"
+  },
+  {
+    "code": "34",
+    "name": "충청남도",
+    "name_eng": "Chungcheongnam-do",
+    "base_year": "2018"
+  },
+  {
+    "code": "35",
+    "name": "전라북도",
+    "name_eng": "Jeollabuk-do",
+    "base_year": "2018"
+  },
+  {
+    "code": "36",
+    "name": "전라남도",
+    "name_eng": "Jeollanam-do",
+    "base_year": "2018"
+  },
+  {
+    "code": "37",
+    "name": "경상북도",
+    "name_eng": "Gyeongsangbuk-do",
+    "base_year": "2018"
+  },
+  {
+    "code": "38",
+    "name": "경상남도",
+    "name_eng": "Gyeongsangnam-do",
+    "base_year": "2018"
+  },
+  {
+    "code": "39",
+    "name": "제주특별자치도",
+    "name_eng": "Jeju-do",
+    "base_year": "2018"
+  }
+]

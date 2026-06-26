@@ -1,0 +1,206 @@
+[
+  {
+    "sidoCode": "11",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/11.json",
+    "featureCount": 25,
+    "bbox": [
+      126.764495,
+      37.428809,
+      127.183539,
+      37.701017
+    ],
+    "bytes": 14638
+  },
+  {
+    "sidoCode": "21",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/21.json",
+    "featureCount": 16,
+    "bbox": [
+      128.765517,
+      34.978625,
+      129.305753,
+      35.389037
+    ],
+    "bytes": 17625
+  },
+  {
+    "sidoCode": "22",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/22.json",
+    "featureCount": 8,
+    "bbox": [
+      128.351797,
+      35.60654,
+      128.761332,
+      36.016165
+    ],
+    "bytes": 7740
+  },
+  {
+    "sidoCode": "23",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/23.json",
+    "featureCount": 10,
+    "bbox": [
+      124.609718,
+      36.926852,
+      126.793695,
+      37.984242
+    ],
+    "bytes": 30820
+  },
+  {
+    "sidoCode": "24",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/24.json",
+    "featureCount": 5,
+    "bbox": [
+      126.644978,
+      35.051582,
+      127.021416,
+      35.258704
+    ],
+    "bytes": 5488
+  },
+  {
+    "sidoCode": "25",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/25.json",
+    "featureCount": 5,
+    "bbox": [
+      127.246653,
+      36.1831,
+      127.559679,
+      36.500231
+    ],
+    "bytes": 6183
+  },
+  {
+    "sidoCode": "26",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/26.json",
+    "featureCount": 5,
+    "bbox": [
+      128.97119,
+      35.328077,
+      129.464655,
+      35.72435
+    ],
+    "bytes": 7831
+  },
+  {
+    "sidoCode": "29",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/29.json",
+    "featureCount": 1,
+    "bbox": [
+      127.127734,
+      36.406758,
+      127.410562,
+      36.732844
+    ],
+    "bytes": 2735
+  },
+  {
+    "sidoCode": "31",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/31.json",
+    "featureCount": 42,
+    "bbox": [
+      126.379785,
+      36.893775,
+      127.848076,
+      38.281788
+    ],
+    "bytes": 67510
+  },
+  {
+    "sidoCode": "32",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/32.json",
+    "featureCount": 18,
+    "bbox": [
+      127.095037,
+      37.028102,
+      129.365672,
+      38.613687
+    ],
+    "bytes": 60017
+  },
+  {
+    "sidoCode": "33",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/33.json",
+    "featureCount": 14,
+    "bbox": [
+      127.27565,
+      36.01243,
+      128.652096,
+      37.258334
+    ],
+    "bytes": 33031
+  },
+  {
+    "sidoCode": "34",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/34.json",
+    "featureCount": 16,
+    "bbox": [
+      125.544076,
+      35.978264,
+      127.639748,
+      37.064942
+    ],
+    "bytes": 66386
+  },
+  {
+    "sidoCode": "35",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/35.json",
+    "featureCount": 15,
+    "bbox": [
+      125.966602,
+      35.299233,
+      127.910117,
+      36.15657
+    ],
+    "bytes": 72635
+  },
+  {
+    "sidoCode": "36",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/36.json",
+    "featureCount": 22,
+    "bbox": [
+      125.081508,
+      33.968573,
+      127.903821,
+      35.486914
+    ],
+    "bytes": 279166
+  },
+  {
+    "sidoCode": "37",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/37.json",
+    "featureCount": 24,
+    "bbox": [
+      127.796152,
+      35.567493,
+      131.870417,
+      37.548995
+    ],
+    "bytes": 73158
+  },
+  {
+    "sidoCode": "38",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/38.json",
+    "featureCount": 22,
+    "bbox": [
+      127.576876,
+      34.534687,
+      129.219072,
+      35.909606
+    ],
+    "bytes": 98866
+  },
+  {
+    "sidoCode": "39",
+    "file": "/data/geojson/korea/sigungu-by-sido-simple/39.json",
+    "featureCount": 2,
+    "bbox": [
+      126.143863,
+      33.112356,
+      126.972657,
+      34.011941
+    ],
+    "bytes": 16171
+  }
+]
