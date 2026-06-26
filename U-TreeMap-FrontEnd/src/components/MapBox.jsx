@@ -5,25 +5,24 @@
   import "mapbox-gl/dist/mapbox-gl.css";
 
   import { loadTreeMarkers } from "../features/map/loadTreeMarkers";
-  import { loadUlsanSubmunicipalities } from "../features/map/loadUlsanSubmunicipalities";
+  import { loadKoreaAdministrativePolygons } from "../features/map/loadKoreaAdministrativePolygons";
   import { setupZoomController } from "../features/map/zoomController";
 
   import MapControls from "./UI/MapControls";
-  import { loadUlsanDistricts } from "../features/map/loadUlsanDistricts";
-  import { loadUlsanMetropolitanCity } from "../features/map/loadUlsanMetropolitanCity";
   import { fetchRegionSummary } from "../api/utreeMap";
 
   mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
 
   export default function MapBox({ 
-    center = [129.2566, 35.5434],
-    zoom = 10,
+    center = [127.7669, 35.9078],
+    zoom = 5.4,
     isMobile = false
   }) {
     const mapContainer = useRef(null);
     const mapRef = useRef(null);
 
     const [mapReady, setMapReady] = useState(false);
+    const [mapInstance, setMapInstance] = useState(null);
 
     useEffect(() => {
       // 🔴 환경변수 체크
@@ -44,7 +43,7 @@
       }
       testGeojson();
       
-      const MIN_ZOOM = 10;
+      const MIN_ZOOM = 5;
       const MAX_ZOOM = 20;
       const map = new mapboxgl.Map({
         container: mapContainer.current,
@@ -57,81 +56,39 @@
         bearing: 0,  // 🔒 회전 제거
       });
 
-      // 지도범위 제한 in 울산광역시
-      // const ULSAN_MAX_BOUNDS = [
-      //   [128.9, 35.3], // southwest
-      //   [129.6, 35.8], // northeast
-      // ];
-      // map.setMaxBounds(ULSAN_MAX_BOUNDS);
+      // 지도범위 제한: 남한 본토, 제주, 백령도, 흑산면, 독도 포함
+      const KOREA_MAX_BOUNDS = [
+        [124.45, 33.0], // southwest
+        [132.05, 38.7], // northeast
+      ];
+      map.setMaxBounds(KOREA_MAX_BOUNDS);
 
       // 🔒 지도 회전 & 기울기 제스처 차단
       map.dragRotate.disable();
       map.touchZoomRotate.disableRotation();
 
       mapRef.current = map;
+      setMapInstance(map);
       setMapReady(true);
 
       // ✅ load 시점에 기능 로딩
       map.on("load", async () => {
         await loadTreeMarkers(map);
-        await loadUlsanSubmunicipalities(map);
-        await loadUlsanDistricts(map);
-        await loadUlsanMetropolitanCity(map);
+        await loadKoreaAdministrativePolygons(map);
         setupZoomController(map);
       });
-
-      //hover
-      let hoveredEmdId = null;
-      map.on("mousemove", "ulsan-emd-fill", (e) => {
-        if (!e.features.length) return;
-
-        const feature = e.features[0];
-
-        if (hoveredEmdId !== null) {
-          map.setFeatureState(
-            { source: "ulsan-emd", id: hoveredEmdId },
-            { hover: false }
-          );
-        }
-
-        hoveredEmdId = feature.id;
-
-        map.setFeatureState(
-          { source: "ulsan-emd", id: hoveredEmdId },
-          { hover: true }
-        );
-      });
-
-      map.on("mouseleave", "ulsan-emd-fill", () => {
-        if (hoveredEmdId !== null) {
-          map.setFeatureState(
-            { source: "ulsan-emd", id: hoveredEmdId },
-            { hover: false }
-          );
-        }
-        hoveredEmdId = null;
-      });
-
-      map.on("mouseenter", "ulsan-emd-fill", () => {
-      map.getCanvas().style.cursor = "pointer";
-    });
-
-      map.on("mouseleave", "ulsan-emd-fill", () => {
-        map.getCanvas().style.cursor = "";
-      });
-
-
 
       return () => {
         map.remove();
         mapRef.current = null;
+        setMapInstance(null);
       };
     }, []);
 
     return(
       <div className="relative w-full h-full">
         <div ref={mapContainer} className="w-full h-full">
-          {mapReady && <MapControls isMobile={isMobile} map={mapRef.current}/>}
+          {mapReady && mapInstance && <MapControls isMobile={isMobile} map={mapInstance}/>}
         </div>
       </div>
     )
