@@ -44,7 +44,7 @@
 
 | 지도 탐색 | 수목 상세 (바텀시트) |
 |:---:|:---:|
-| <img src="docs/images/mobile.png" width="240"/> | <img src="docs/images/mobile-detail.png" width="240"/> |
+| <img src="docs/images/mobile.png" width="260"/> | <img src="docs/images/mobile-detail.png" width="260"/> |
 
 > 마커 색상은 수목의 생육 상태를 나타냅니다.
 
